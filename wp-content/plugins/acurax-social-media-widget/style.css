@@ -1,0 +1,14 @@
+#acx_social_widget
+{
+position:absolute;
+z-index:10000;
+min-width: 142px;
+}
+#acx_social_widget img, #acurax_si_widget_simple img, #short_code_si_icon img
+{
+margin-left:1px;
+}
+#acx_social_widget img:hover, #acurax_si_widget_simple img:hover, #short_code_si_icon img:hover
+{
+opacity:0.8;
+}

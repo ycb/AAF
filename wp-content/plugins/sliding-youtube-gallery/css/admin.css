@@ -1,0 +1,354 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	color: #bc0f11;
+}
+
+h3 {
+	font-size: 22px;
+	font-weight: normal;
+	color: #bc0f11;
+	margin: 0px auto;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #bc0f11;
+	margin: 10px auto;
+}
+
+.syg_error {
+	background-color: #FFEBE8;
+    border: 1px #CC0000 solid;
+	padding: 0 0.6em;
+	margin: 0px 0px 15px;
+  	border-radius: 3px 3px 3px 3px;
+	color: #333333;
+    font-size: 12px;
+    line-height: 1.4em;
+}
+
+.syg_updated {
+	background-color: #FFFFE0;
+    border: 1px #E6DB55 solid;
+	padding: 0 0.6em;
+	margin: 0px 0px 15px;
+  	border-radius: 3px 3px 3px 3px;
+	color: #333333;
+    font-size: 12px;
+    line-height: 1.4em;
+}
+
+.webengTitle {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	display: inline-block;
+	font-size: 30px !important;
+	color: white !important;
+	padding: 0;
+}
+
+.webengText {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	font-size: 16px;
+}
+
+.webengRed {
+	color: #bc0f11;
+}
+
+.webengWhite {
+	color: #ffffff;
+}
+
+.noDecoration {
+	text-decoration: none;
+}
+
+#syg-plugin-header {
+	background-color: #333;
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	
+}
+
+#syg-plugin-area {
+	padding: 30px;
+	box-shadow: inset 0 0 6px 6px #888;
+	background-color: #efefef;
+}
+
+fieldset {
+	border: 1px #333333 solid;
+	margin-bottom: 10px;
+	padding: 10px;
+	box-shadow: 0 8px 10px -10px black;
+	border-radius: 5px;
+}
+
+legend {
+	font-size: 14px;
+	font-weight: lighter;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	padding: 3px;
+}
+
+input, select {
+	margin-right: 10px;
+}
+
+input[type="radio"] {
+	margin-right: 0;
+}
+
+img {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+hr {
+	color: #cccccc;
+}
+
+label {
+	cursor: default;
+}
+
+.icon32.icon-settings, #icon-options-general {
+	background: url("../img/gear-white.png") no-repeat scroll transparent;
+	margin-right: 5px;
+	padding-right: 0;
+}
+
+#thumb_bordercolor_selector, 
+#box_backgroundcolor_selector,
+#desc_fontcolor_selector,
+#paginator_bordercolor_selector,
+#paginator_shadowcolor_selector,
+#paginator_bgcolor_selector,
+#paginator_fontcolor_selector {
+	display: inline-block;
+}
+
+#thumb_bordercolor_selector div, 
+#box_backgroundcolor_selector div, 
+#desc_fontcolor_selector div,
+#paginator_bordercolor_selector div,
+#paginator_shadowcolor_selector div,
+#paginator_bgcolor_selector div,
+#paginator_fontcolor_selector div {
+    background: url("../img/colorpicker/select.png") repeat scroll center center transparent;
+    height: 15px;
+    width: 15px;
+	border: 1px #333333 solid;
+}
+
+/* table of galleries */ 
+
+#galleries_table {
+	margin-top: 20px;
+	width: 1000px;
+	border-radius: 10px;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	font-size: 15px;
+	-moz-box-shadow: 0 0 5px #333;
+	-webkit-box-shadow: 0 0 5px #333;
+	box-shadow: 0 0 5px #333;
+	background-color: white;
+}
+
+#galleries_table th:FIRST-CHILD {
+	background: #333;
+	color: #fff;
+	border-radius: 10px 0px 0px 0px;
+}
+
+#galleries_table th {
+	background: #333;
+	color: #fff;
+	height: 30px;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	font-size: 13px;
+}
+
+#galleries_table th:LAST-CHILD {
+	background: #333;
+	color: #fff;
+	border-radius: 0px 10px 0px 0px;
+}
+
+#galleries_table th span {
+	padding: 5px;
+}
+
+#galleries_table tr {
+	height: 30px;
+}
+
+#galleries_table td {
+	text-align: center;
+	padding: 10px;
+}
+
+#galleries_table td.NO {
+	color: #bc0f11;
+	font-weight: bold;
+}
+
+#galleries_table th.id {
+	width: 50px;
+}
+
+#galleries_table th.user_pic {
+	width: 100px;
+}
+
+img.user_pic {
+	height: 50px;
+}
+
+#galleries_table th.user {
+	width: 200px;
+}
+
+#galleries_table th.name {
+	width: 200px;
+}
+
+#galleries_table th.action {
+	width: 155px;
+}
+
+#galleries_table th.type {
+	width: 100px;
+}
+
+#galleries_table th.cached {
+	width: 100px;
+}
+
+#galleries_table tr.navigation {
+	height: 10px;
+}
+
+#galleries_table td.navigation {
+	width: 800px;
+	padding: 2px;
+	background-color: #efefef;
+	border-radius: 0px 0px 6px 6px;
+}
+
+#syg-loading {
+  height: 0 !important;
+}
+
+#paginator-area {
+	display: inline-block;
+}
+
+#syg-pagination-galleries, #syg-pagination-styles {
+	text-align:center;
+	display: block;
+}
+
+#syg-pagination-galleries li, #syg-pagination-styles li {	
+	list-style: none;
+	float: left;
+	margin-right: 10px; 
+	padding:2px;
+	box-shadow: 0 0 5px #333333;
+	background-color: #333;
+	color: #cacaca;
+	border-radius: 5px;
+	width: 20px;
+	height: 20px;
+	line-height: 2;
+	font-size: 10px;
+}
+
+#syg-pagination-galleries li:hover, #syg-pagination-styles li:hover { 
+	color:#FF0084; 
+	cursor: pointer; 
+}
+
+.current_page {
+	color: white !important;
+}
+
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="file"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="email"], 
+input[type="number"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="url"], 
+select { border-color: #333333 !important;}
+
+#syg-plugin-area p.text {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	font-size: 18px;
+}
+
+#syg-plugin-area p, #syg-plugin-area span, #syg-plugin-area ul {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	font-size: 14px;
+}
+
+#syg-plugin-area ul {
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+#syg-plugin-area ul {
+	
+}
+
+/***************************
+ * Page support custom css *
+ ***************************/
+
+#support_table {
+	width: 100%;
+}
+
+.support_table_sx {
+	vertical-align: top;
+	width: 70%;
+}
+
+.support_table_dx {
+	vertical-align: top; 
+	width: 30%;
+}
+
+.splashpage {
+	border-radius: 10px;
+	border: 1px #333 solid; 
+	box-shadow: 0 0 8px #888;
+	width: 97%;
+}
+
+.support_internal {
+	box-shadow: 0 0 8px #888; 
+	margin-top: 15px;
+	width: 97%;
+	padding: 1%;
+}
+
+.side_box {
+	background-color: #cccccc; 
+	border: 1px #333 solid; 
+	padding: 10px; 
+	margin-bottom: 15px; 
+	border-radius: 10px; 
+	box-shadow: 0 0 8px #888;
+}
+
+#syg_option_use_fb2_desc {
+	display: inline;
+}

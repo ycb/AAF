@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+#pearl_lightbox a img
+{
+	margin:0;
+	padding:0;
+	border:0;
+}
+#pearl_lightbox a
+{
+	margin:0;
+	padding:0;
+}
+#pearl_lightbox div
+{
+	text-align:center;
+	padding:0;
+	margin:0;
+	
+}
+#pearl_lightbox .pearl_lightbox_active
+{
+	margin-right:5px;
+	margin-bottom:5px;
+	float:left;	
+}
+.pearl_lightbox_active
+{
+	
+}
+.pearl_clear
+{
+	clear:both;
+}
+.backdrop
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.7;
+	z-index:50;
+	display:none;
+}
+.box
+{
+	position:absolute;
+	top:20%;
+	left:30%;
+	display:none;
+	opacity:1.0;
+	z-index:51;
+	text-align:center;
+	
+}
+.box img
+{
+	margin:10px;
+	margin-bottom:0px;
+}
+.box p
+{
+	margin-bottom:0px !important;
+	text-align:center;
+}
+.active
+{
+	z-index:53;
+}
+.lightbox
+{
+	z-index:52;
+}
+.btnstyle
+{	
+	text-decoration:none;
+	margin-right:10px;
+}

@@ -1,0 +1,1 @@
+This folder is used to cache gallery js code

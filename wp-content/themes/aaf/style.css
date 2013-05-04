@@ -1,0 +1,36 @@
+/*
+Theme Name: OBC 2013 Theme
+Theme URI: http://YourCustomBlog.com/
+Author: Dario Novoa
+Author URI: http://darionovoa.info
+Description: Omega Boys Club Theme by YCB
+Version: 1.0
+*/
+
+/*Mobile Version styles*/
+.logo {
+	position: absolute;
+	display: block;
+	top: 200px;
+	width: 170px;
+	height: 141px;
+	background: url('images/logo_mobile.png') 0 0 no-repeat;
+}
+
+body {
+	padding: 0;
+}
+.site-header {
+	background: #000;
+}
+
+.site-header h2 {
+	color: #fff;
+	font-size: 1.2rem;
+	text-align: right;
+	line-height: 1.2rem;
+}
+
+.site-main {
+	padding: 0 20px;
+}
