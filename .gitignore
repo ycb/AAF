@@ -1,8 +1,4 @@
 sftp-config.json
 .DS_Store
-<<<<<<< HEAD
-wp-config.php
-=======
 sftp-config.json
 wp-config.php
->>>>>>> read/write permission for all files
