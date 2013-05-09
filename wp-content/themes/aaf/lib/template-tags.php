@@ -4,26 +4,26 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package _bootstraps
+ * @package AAF
  */
 
 
-if ( ! function_exists( 'obc_comment' ) ) :
+if ( ! function_exists( 'AAF_comment' ) ) :
 /**
  * Template for comments and pingbacks.
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
  *
- * @package _bootstraps - 2013 1.0
+ * @package AAF - 2013 1.0
  */
-function obc_comment( $comment, $args, $depth ) {
+function AAF_comment( $comment, $args, $depth ) {
     $GLOBALS['comment'] = $comment;
     switch ( $comment->comment_type ) :
         case 'pingback' :
         case 'trackback' :
     ?>
     <li class="post pingback">
-        <p><?php _e( 'Pingback:', 'obc' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'obc' ), ' ' ); ?></p>
+        <p><?php _e( 'Pingback:', 'AAF' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'AAF' ), ' ' ); ?></p>
     <?php
             break;
         default :
@@ -35,20 +35,20 @@ function obc_comment( $comment, $args, $depth ) {
                     <div class="comment-avatar">
                         <?php echo get_avatar( $comment, 75 ); ?>
                     </div>
-                    <?php printf( __( '%s <span class="says">says:</span>', 'obc' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
+                    <?php printf( __( '%s <span class="says">says:</span>', 'AAF' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
 
                     <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
                         <?php
                         /* translators: 1: date, 2: time */
-                        printf( __( '%1$s at %2$s', 'obc' ), get_comment_date(), get_comment_time() );
+                        printf( __( '%1$s at %2$s', 'AAF' ), get_comment_date(), get_comment_time() );
                         ?>
                         </time>
                     </a>
-                    <?php edit_comment_link( __( '(Edit)', 'obc' ), ' ' );
+                    <?php edit_comment_link( __( '(Edit)', 'AAF' ), ' ' );
                     ?>
                 </div><!-- .comment-author .vcard -->
                 <?php if ( $comment->comment_approved == '0' ) : ?>
-                    <em><?php _e( 'Your comment is awaiting moderation.', 'obc' ); ?></em>
+                    <em><?php _e( 'Your comment is awaiting moderation.', 'AAF' ); ?></em>
                     <br />
                 <?php endif; ?>
             </footer>
@@ -66,20 +66,20 @@ function obc_comment( $comment, $args, $depth ) {
 }
 endif; // ends check for tp_comment()
 
-if ( ! function_exists( 'obc_posted_on' ) ) :
+if ( ! function_exists( 'AAF_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  *
- * @package _bootstraps - 2013 1.0
+ * @package AAF - 2013 1.0
  */
-function obc_posted_on() {
-    printf( __( '<a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"></span>', 'obc' ),
+function AAF_posted_on() {
+    printf( __( '<a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"></span>', 'AAF' ),
         esc_url( get_permalink() ),
         esc_attr( get_the_time() ),
         esc_attr( get_the_date( 'c' ) ),
         esc_html( get_the_date() ),
         esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-        esc_attr( sprintf( __( 'View all posts by %s', 'obc' ), get_the_author() ) ),
+        esc_attr( sprintf( __( 'View all posts by %s', 'AAF' ), get_the_author() ) ),
         esc_html( get_the_author() )
     );
 }
@@ -100,7 +100,7 @@ add_action( 'save_post', 'tp_category_transient_flusher' );
 /**
  * Display navigation to next/previous pages when applicable
  */
-function obc_content_nav( $nav_id ) {
+function AAF_content_nav( $nav_id ) {
     global $wp_query, $post;
 
     // Don't print empty markup on single pages if there's nowhere to navigate.
@@ -121,16 +121,16 @@ function obc_content_nav( $nav_id ) {
         $nav_class = 'site-navigation post-navigation';
     ?>
     <nav role="navigation" id="<?php echo $nav_id; ?>" class="<?php echo $nav_class; ?>">
-        <h1 class="assistive-text"><?php _e( 'Post navigation', 'obc' ); ?></h1>
+        <h1 class="assistive-text"><?php _e( 'Post navigation', 'AAF' ); ?></h1>
 
         <ul class="pager">
         <?php if ( is_single() ) : // navigation links for single posts  ?>
 
             <li class="previous">
-                <?php previous_post_link( '<div class="nav-previous">%link</div>', _x( '&larr;', 'Previous post link', 'obc' ) . ' %title' ); ?>
+                <?php previous_post_link( '<div class="nav-previous">%link</div>', _x( '&larr;', 'Previous post link', 'AAF' ) . ' %title' ); ?>
             </li>
             <li class="next">
-                <?php next_post_link( '<div class="nav-next">%link</div>', '%title ' . _x( '&rarr;', 'Next post link', 'obc' ) ); ?>
+                <?php next_post_link( '<div class="nav-next">%link</div>', '%title ' . _x( '&rarr;', 'Next post link', 'AAF' ) ); ?>
             </li>
 
         <?php endif; ?>
@@ -138,14 +138,14 @@ function obc_content_nav( $nav_id ) {
 
 
         <?php if ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
-            <?php obc_page_navi(); ?>
+            <?php AAF_page_navi(); ?>
         <?php endif; ?>
 
     </nav><!-- #<?php echo $nav_id; ?> -->
     <?php
 }
 
-function obc_page_navi( $before = '', $after = '' ) {
+function AAF_page_navi( $before = '', $after = '' ) {
     global $wp_query;
 
     $posts_per_page = intval( get_query_var( 'posts_per_page' ) );
@@ -188,7 +188,7 @@ function obc_page_navi( $before = '', $after = '' ) {
     if ( $prevposts ) {
         echo '<li>' . $prevposts . '</li>';
     } else {
-        echo '<li class="disabled"><a href="#">' . __( '&larr; Previous', 'obc' ) . '</a></li>';
+        echo '<li class="disabled"><a href="#">' . __( '&larr; Previous', 'AAF' ) . '</a></li>';
     }
 
     for ($i = $start_page; $i <= $end_page; $i++) {
@@ -199,7 +199,7 @@ function obc_page_navi( $before = '', $after = '' ) {
         }
     }
     echo '<li class="">';
-    next_posts_link( __('Next &rarr;', 'obc') );
+    next_posts_link( __('Next &rarr;', 'AAF') );
     echo '</li>';
     if ( $end_page < $max_page ) {
         $last_page_text = "»";

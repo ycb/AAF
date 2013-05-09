@@ -2,8 +2,8 @@
 /**
  * The template for displaying image attachments.
  *
- * @package _bootstraps
- * @package _bootstraps - 2013 1.0
+ * @package AAF
+ * @package AAF - 2013 1.0
  */
 get_header();
 ?>
@@ -20,15 +20,15 @@ get_header();
                     <div class="entry-meta">
                         <?php
                         $metadata = wp_get_attachment_metadata();
-                        printf( __( 'Published <span class="entry-date"><time class="entry-date" datetime="%1$s" pubdate>%2$s</time></span> at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> in <a href="%6$s" title="Return to %7$s" rel="gallery">%7$s</a>', 'obc' ), esc_attr( get_the_date( 'c' ) ), esc_html( get_the_date() ), wp_get_attachment_url(), $metadata['width'], $metadata['height'], get_permalink( $post->post_parent ), get_the_title( $post->post_parent )
+                        printf( __( 'Published <span class="entry-date"><time class="entry-date" datetime="%1$s" pubdate>%2$s</time></span> at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> in <a href="%6$s" title="Return to %7$s" rel="gallery">%7$s</a>', 'AAF' ), esc_attr( get_the_date( 'c' ) ), esc_html( get_the_date() ), wp_get_attachment_url(), $metadata['width'], $metadata['height'], get_permalink( $post->post_parent ), get_the_title( $post->post_parent )
                         );
                         ?>
-                        <?php edit_post_link( __( 'Edit', 'obc' ), '<span class="sep"> | </span> <span class="edit-link">', '</span>' ); ?>
+                        <?php edit_post_link( __( 'Edit', 'AAF' ), '<span class="sep"> | </span> <span class="edit-link">', '</span>' ); ?>
                     </div><!-- .entry-meta -->
 
                     <nav id="image-navigation" class="site-navigation">
-                        <span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous', 'obc' ) ); ?></span>
-                        <span class="next-image"><?php next_image_link( false, __( 'Next &rarr;', 'obc' ) ); ?></span>
+                        <span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous', 'AAF' ) ); ?></span>
+                        <span class="next-image"><?php next_image_link( false, __( 'Next &rarr;', 'AAF' ) ); ?></span>
                     </nav><!-- #image-navigation -->
                 </header><!-- .entry-header -->
 
@@ -75,21 +75,21 @@ get_header();
                     </div><!-- .entry-attachment -->
 
                     <?php the_content(); ?>
-                    <?php wp_link_pages( array('before' => '<div class="page-links">' . __( 'Pages:', 'obc' ), 'after' => '</div>') ); ?>
+                    <?php wp_link_pages( array('before' => '<div class="page-links">' . __( 'Pages:', 'AAF' ), 'after' => '</div>') ); ?>
 
                 </div><!-- .entry-content -->
 
                 <footer class="entry-meta">
                     <?php if ( comments_open() && pings_open() ) : // Comments and trackbacks open  ?>
-                        <?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'obc' ), get_trackback_url() ); ?>
+                        <?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'AAF' ), get_trackback_url() ); ?>
                     <?php elseif ( !comments_open() && pings_open() ) : // Only trackbacks open ?>
-                        <?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'obc' ), get_trackback_url() ); ?>
+                        <?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'AAF' ), get_trackback_url() ); ?>
                     <?php elseif ( comments_open() && !pings_open() ) : // Only comments open  ?>
-                        <?php _e( 'Trackbacks are closed, but you can <a class="comment-link" href="#respond" title="Post a comment">post a comment</a>.', 'obc' ); ?>
+                        <?php _e( 'Trackbacks are closed, but you can <a class="comment-link" href="#respond" title="Post a comment">post a comment</a>.', 'AAF' ); ?>
                     <?php elseif ( !comments_open() && !pings_open() ) : // Comments and trackbacks closed  ?>
-                        <?php _e( 'Both comments and trackbacks are currently closed.', 'obc' ); ?>
+                        <?php _e( 'Both comments and trackbacks are currently closed.', 'AAF' ); ?>
                     <?php endif; ?>
-                    <?php edit_post_link( __( 'Edit', 'obc' ), ' <span class="edit-link">', '</span>' ); ?>
+                    <?php edit_post_link( __( 'Edit', 'AAF' ), ' <span class="edit-link">', '</span>' ); ?>
                 </footer><!-- .entry-meta -->
             </article><!-- #post-<?php the_ID(); ?> -->
 

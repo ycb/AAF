@@ -1,14 +1,14 @@
 <?php
 
 /**
- * obc Settings API wrapper class
+ * AAF Settings API wrapper class
  *
- * @author Tareq Hasan <tareq@obc.com>
- * @link http://tareq.obc.com Tareq's Planet
+ * @author Tareq Hasan <tareq@AAF.com>
+ * @link http://tareq.AAF.com Tareq's Planet
  * @example settings-api.php How to use the class
  */
-if ( !class_exists( 'obc_Settings_API' ) ):
-    class obc_Settings_API {
+if ( !class_exists( 'AAF_Settings_API' ) ):
+    class AAF_Settings_API {
 
     /**
      * settings sections array
@@ -37,7 +37,7 @@ if ( !class_exists( 'obc_Settings_API' ) ):
 
     public static function getInstance() {
         if ( !self::$_instance ) {
-            self::$_instance = new obc_Settings_API();
+            self::$_instance = new AAF_Settings_API();
         }
 
         return self::$_instance;

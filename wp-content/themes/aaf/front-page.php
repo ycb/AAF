@@ -18,14 +18,13 @@ get_header();
 
         <?php while (have_posts()) : the_post(); ?>
 
-            <?php get_template_part( 'content', 'page' ); ?>
-
-            <?php comments_template( '', true ); ?>
+            <?php get_template_part( 'content', 'front-page' ); ?>
 
         <?php endwhile; // end of the loop. ?>
 
     </div><!-- #content .site-content -->
 </div><!-- #primary .content-area -->
 
-<?php get_sidebar(); ?>
+<div class="hidden-desktop sidebarmobile"><?php get_sidebar('mobile'); ?></div>
+<div class="visible-desktop sidebardesktop"><?php get_sidebar('desktop'); ?></div>
 <?php get_footer(); ?>

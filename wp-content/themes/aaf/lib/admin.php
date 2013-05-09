@@ -12,7 +12,7 @@ class Tareqs_Planet_Admin {
     private $settings_api;
 
     function __construct() {
-        $this->settings_api = new obc_Settings_API();
+        $this->settings_api = new AAF_Settings_API();
 
         add_action( 'admin_init', array($this, 'admin_init') );
         add_action( 'admin_menu', array($this, 'admin_menu') );
@@ -36,7 +36,7 @@ class Tareqs_Planet_Admin {
         $sections = array(
             array(
                 'id' => 'tp_settings',
-                'title' => __( 'Basic Settings', 'obc' )
+                'title' => __( 'Basic Settings', 'AAF' )
             )
         );
         return $sections;
@@ -52,18 +52,18 @@ class Tareqs_Planet_Admin {
             'tp_settings' => array(
                 array(
                     'name' => 'footer_text',
-                    'label' => __( 'Footer Message', 'obc' ),
+                    'label' => __( 'Footer Message', 'AAF' ),
                     'type' => 'textarea',
                     'std' => ''
                 ),
                 array(
                     'name' => 'footer_js',
-                    'label' => __( 'Footer JS', 'obc' ),
+                    'label' => __( 'Footer JS', 'AAF' ),
                     'type' => 'textarea'
                 ),
                 array(
                     'name' => 'footer_css',
-                    'label' => __( 'Footer CSS', 'obc' ),
+                    'label' => __( 'Footer CSS', 'AAF' ),
                     'type' => 'textarea'
                 )
             )

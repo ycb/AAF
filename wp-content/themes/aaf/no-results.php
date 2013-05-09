@@ -4,29 +4,29 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package _bootstraps
- * @package _bootstraps - 2013 1.0
+ * @package AAF
+ * @package AAF - 2013 1.0
  */
 ?>
 
 <article id="post-0" class="post no-results not-found">
     <header class="entry-header">
-        <h1 class="entry-title"><?php _e( 'Nothing Found', 'obc' ); ?></h1>
+        <h1 class="entry-title"><?php _e( 'Nothing Found', 'AAF' ); ?></h1>
     </header><!-- .entry-header -->
 
     <div class="entry-content">
         <?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-            <p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'obc' ), admin_url( 'post-new.php' ) ); ?></p>
+            <p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'AAF' ), admin_url( 'post-new.php' ) ); ?></p>
 
         <?php elseif ( is_search() ) : ?>
 
-            <p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'obc' ); ?></p>
+            <p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'AAF' ); ?></p>
             <?php get_search_form(); ?>
 
         <?php else : ?>
 
-            <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'obc' ); ?></p>
+            <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'AAF' ); ?></p>
             <?php get_search_form(); ?>
 
         <?php endif; ?>

@@ -1,18 +1,18 @@
 <?php
 
 /**
- * _bootstraps - 2013 functions and definitions
+ * AAF - 2013 functions and definitions
  *
- * @package _bootstraps
- * @package _bootstraps - 2013 1.0
+ * @package AAF
+ * @package AAF - 2013 1.0
  */
 
 /**
  * Bootstrap Theme Class
  *
- * @package _bootstraps - 2013 1.0
+ * @package AAF - 2013 1.0
  */
-class obc_Bootstrap {
+class AAF {
 
     function __construct() {
         add_action( 'after_setup_theme', array($this, 'setup_theme') );
@@ -29,7 +29,7 @@ class obc_Bootstrap {
      * before the init hook. The init hook is too late for some features, such as indicating
      * support post thumbnails.
      *
-     * @package _bootstraps - 2013 1.0
+     * @package AAF - 2013 1.0
      */
     function setup_theme() {
 
@@ -56,7 +56,7 @@ class obc_Bootstrap {
          * If you're building a theme based on Tareq\'s Planet - 2013, use a find and replace
          * to change 'tp' to the name of your theme in all the template files
          */
-        load_theme_textdomain( 'obc', get_template_directory() . '/languages' );
+        load_theme_textdomain( 'AAF', get_template_directory() . '/languages' );
 
         /**
          * Add default posts and comments RSS feed links to head
@@ -72,7 +72,7 @@ class obc_Bootstrap {
          * This theme uses wp_nav_menu() in one location.
          */
         register_nav_menus( array(
-            'primary' => __( 'Primary Menu', 'obc' ),
+            'primary' => __( 'Primary Menu', 'AAF' ),
         ) );
 
         /**
@@ -94,7 +94,7 @@ class obc_Bootstrap {
         wp_enqueue_style( 'font-awesome', $template_directory . '/css/font-awesome.css' );
         wp_enqueue_style( 'prettyPhoto', $template_directory . '/css/prettyPhoto.css' );
         wp_enqueue_style( 'style', $template_directory . '/css/style.css' );
-        wp_enqueue_style( 'obcstyle', $template_directory . '/style.css' );
+        wp_enqueue_style( 'AAFstyle', $template_directory . '/style.css' );
 
         // all scripts
         wp_enqueue_script( 'small-menu', $template_directory . '/js/small-menu.js', array('jquery'), '20120206', true );
@@ -116,12 +116,21 @@ class obc_Bootstrap {
     /**
      * Register widgetized area and update sidebar with default widgets
      *
-     * @package _bootstraps - 2013 1.0
+     * @package AAF - 2013 1.0
      */
     function widgets_init() {
         register_sidebar( array(
-            'name' => __( 'Sidebar', 'obc' ),
-            'id' => 'sidebar-1',
+            'name' => __( 'Sidebar Desktop', 'AAF' ),
+            'id' => 'desktop',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget' => '</aside>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        ) );
+
+        register_sidebar( array(
+            'name' => __( 'Sidebar Mobile', 'AAF' ),
+            'id' => 'mobile',
             'before_widget' => '<aside id="%1$s" class="widget %2$s">',
             'after_widget' => '</aside>',
             'before_title' => '<h3 class="widget-title">',
@@ -135,8 +144,8 @@ class obc_Bootstrap {
      * @return void
      */
     function footer_scripts() {
-        $css = obc_get_option( 'footer_css', 'tp_settings' );
-        $js = obc_get_option( 'footer_js', 'tp_settings' );
+        $css = AAF_get_option( 'footer_css', 'tp_settings' );
+        $js = AAF_get_option( 'footer_js', 'tp_settings' );
 
         if ( $css ) {
             echo '<style type="text/css">' . $css . '</style>' . "\r\n";
@@ -149,7 +158,7 @@ class obc_Bootstrap {
 
 }
 
-$obc_bootstrap = new obc_Bootstrap();
+$AAF = new AAF();
 
 /**
  * Get the value of a settings field
@@ -159,7 +168,7 @@ $obc_bootstrap = new obc_Bootstrap();
  * @param string $default default text if it's not found
  * @return mixed
  */
-function obc_get_option( $option, $section, $default = '' ) {
+function AAF_get_option( $option, $section, $default = '' ) {
 
     $options = get_option( $section );
 
@@ -168,4 +177,12 @@ function obc_get_option( $option, $section, $default = '' ) {
     }
 
     return $default;
+}
+
+add_action('wp_head', 'show_template');
+function show_template() {
+    global $template;
+    echo "<!-- Template in use";
+    print_r($template);
+    echo "-->";
 }

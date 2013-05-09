@@ -4,8 +4,8 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package _bootstraps
- * @package _bootstraps - 2013 1.0
+ * @package AAF
+ * @package AAF - 2013 1.0
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -30,7 +30,7 @@
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'obc' ), max( $paged, $page ) );
+		echo ' | ' . sprintf( __( 'Page %s', 'AAF' ), max( $paged, $page ) );
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -45,28 +45,44 @@
 <body <?php body_class(); ?>>
     <div id="page" class="hfeed site">
         <?php do_action( 'before' ); ?>
+        <div id="phonenav" class="hidden-desktop">
+            <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <nav role="navigation" class="site-navigation main-navigation clearfix">
+                                <h1 class="assistive-text"><i class="icon-reorder"></i> <?php _e( 'Menu', 'AAF' ); ?></h1>
+                                <div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'AAF' ); ?>"><?php _e( 'Skip to content', 'AAF' ); ?></a></div>
+
+                                <?php wp_nav_menu( array('theme_location' => 'primary', 'container_id' => 'navigation', 'container_class' => 'site-main-menu', 'walker' => new AFF_Walker_Nav_Menu()) ); ?>
+                            </nav><!-- .site-navigation .main-navigation -->
+                        </div><!-- .span12 -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div> <!-- .menu-container -->
+        </div>
+
         <header id="masthead" class="site-header" role="banner">
             <div class="container">
                 <div class="row">
                     <div class="span12">
                         <hgroup>
                             
-                            <h1 class="logo"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"></a></h1>
-                            <h2 class="site-title"><?php bloginfo( 'name' ); ?> <?php bloginfo( 'description' ); ?></h2>
+                            <h1 class="logo pull-left"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"></a></h1>
+                            <h2 class="site-title"><?php// bloginfo( 'name' ); ?> <?php bloginfo( 'description' ); ?></h2>
                         </hgroup>
                     </div><!-- .span12 -->
                 </div><!-- .row -->
             </div><!-- .container -->
 
-            <div class="menu-container">
+            <div class="menu-container visible-desktop">
                 <div class="container">
                     <div class="row">
                         <div class="span12">
                             <nav role="navigation" class="site-navigation main-navigation clearfix">
-                                <h1 class="assistive-text"><i class="icon-reorder"></i> <?php _e( 'Menu', 'obc' ); ?></h1>
-                                <div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'obc' ); ?>"><?php _e( 'Skip to content', 'obc' ); ?></a></div>
+                                <h1 class="assistive-text"><i class="icon-reorder"></i> <?php _e( 'Menu', 'AAF' ); ?></h1>
+                                <div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'AAF' ); ?>"><?php _e( 'Skip to content', 'AAF' ); ?></a></div>
 
-                                <?php wp_nav_menu( array('theme_location' => 'primary', 'container_id' => 'navigation', 'container_class' => 'site-main-menu', 'walker' => new Bootstrap_Walker_Nav_Menu()) ); ?>
+                                <?php wp_nav_menu( array('theme_location' => 'primary', 'container_id' => 'navigation', 'container_class' => 'site-main-menu', 'walker' => new AFF_Walker_Nav_Menu()) ); ?>
                             </nav><!-- .site-navigation .main-navigation -->
                         </div><!-- .span12 -->
                     </div><!-- .row -->

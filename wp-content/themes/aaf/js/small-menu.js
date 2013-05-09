@@ -2,12 +2,12 @@
  * Handles toggling the main navigation menu for small screens.
  */
 jQuery( document ).ready( function( $ ) {
-    var $masthead = $( '#masthead' ),
+    var $masthead = $( '#phonenav' ),
         timeout = false;
 
     $.fn.smallMenu = function() {
         $masthead.find( '.site-navigation' ).removeClass( 'main-navigation' ).addClass( 'main-small-navigation' );
-        $masthead.find( '.site-navigation h1' ).removeClass( 'assistive-text' ).addClass( 'menu-toggle' );
+        $masthead.find( '.site-navigation h1' ).removeClass( 'assistive-text' ).addClass( 'menu-toggle' ).html('<i class="icon-reorder"></i>');
 
         $( '.menu-toggle' ).unbind( 'click' ).click( function() {
             $masthead.find( '.menu' ).toggle();

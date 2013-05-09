@@ -4,8 +4,8 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package _bootstraps
- * @package _bootstraps - 2013 1.0
+ * @package AAF
+ * @package AAF - 2013 1.0
  */
 ?>
 </div><!-- .row -->
@@ -20,9 +20,9 @@
                     <?php do_action( 'tp_credits' ); ?>
 
                     &copy; 2008-<?php echo date( 'Y' ) ?> <a href="http://darionovoa.info">Dario Novoa</a>. All rights are reserved.
-                    Powered by <a href="http://wordpress.org/" target="_blank" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'obc' ); ?>" rel="generator"><?php printf( __( '%s', 'obc' ), 'WordPress' ); ?></a>.
+                    Powered by <a href="http://wordpress.org/" target="_blank" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'AAF' ); ?>" rel="generator"><?php printf( __( '%s', 'AAF' ), 'WordPress' ); ?></a>.
 
-                    <?php echo obc_get_option( 'footer_text', 'tp_settings' ); ?>
+                    <?php echo AAF_get_option( 'footer_text', 'tp_settings' ); ?>
                 </div><!-- .site-info -->
             </div>
         </div><!-- .row -->

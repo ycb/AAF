@@ -1,5 +1,5 @@
 /*
-Theme Name: OBC 2013 Theme
+Theme Name: AAF 2013 Theme
 Theme URI: http://YourCustomBlog.com/
 Author: Dario Novoa
 Author URI: http://darionovoa.info
@@ -32,14 +32,26 @@ Version: 1.0
   font-weight: 200;
 }
 
+/*Globals*/
+.center {
+	margin: 0 auto;
+}
+
 /*Mobile Version styles*/
+#phonenav {
+	background: #bcbdc0;
+}
+
+.menu {
+	display: none;
+}
+
 .logo {
-	position: absolute;
 	display: block;
-	top: 200px;
-	width: 170px;
-	height: 141px;
-	background: url('images/logo_mobile.png') 0 0 no-repeat;
+	width: 110px;
+	height: 92px;
+	background: url('images/logo_mobile_inverse.png') 0 0 no-repeat;
+	margin: 0 0 1.5rem 1.5rem;
 }
 
 body {
@@ -52,14 +64,50 @@ body {
 .site-header h2 {
 	color: #fff;
 	font-family: 'VAGRounded', Arial, Helvetica, sans-serif;
-	font-size: 1.4rem;
-	text-align: right;
-	line-height: 2rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
 	font-weight: lighter;
 	letter-spacing: .07rem;
 	text-transform: uppercase;
+	padding-top: 2rem;
 }
 
 .site-main {
 	padding: 0 20px;
 }
+
+.entry-header {
+	display: none;
+}
+
+.sidebarmobile {}
+
+.sidebarmobile ul {
+	display: block;
+	margin-bottom: 0;
+	border-bottom: 1px solid #fff;
+}
+
+	.sidebarmobile ul li {
+		background: #000;
+		font-family: 'VAGRounded', Arial, Helvetica, sans-serif;
+		font-size: 1.3rem;
+		font-weight: lighter;
+		letter-spacing: .08rem;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 1rem 0rem;
+	}
+
+		.sidebarmobile ul li a{
+			color: #fff;
+		}
+
+		.sidebarmobile ul li small {
+			font-size: .7rem;
+			color: #fff;
+			line-height: 0;
+		}
+		.sidebarmobile .widget {
+			margin-bottom: 0;
+		}
