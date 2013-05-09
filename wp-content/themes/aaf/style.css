@@ -28,8 +28,8 @@ Version: 1.0
        url('font/univers-45-light.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('font/univers-45-light.svg#emibwbbsnf') format('svg'); /* Legacy iOS */
        
-  font-style:   normal;
-  font-weight:  200;
+  font-style:  normal;
+  font-weight: 200;
 }
 
 /*Mobile Version styles*/
@@ -52,9 +52,12 @@ body {
 .site-header h2 {
 	color: #fff;
 	font-family: 'VAGRounded', Arial, Helvetica, sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	text-align: right;
-	line-height: 1.2rem;
+	line-height: 2rem;
+	font-weight: lighter;
+	letter-spacing: .07rem;
+	text-transform: uppercase;
 }
 
 .site-main {
