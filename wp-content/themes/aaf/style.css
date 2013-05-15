@@ -40,6 +40,38 @@ Version: 1.0
 /*Mobile Version styles*/
 #phonenav {
 	background: #bcbdc0;
+	padding-top: .8rem;
+}
+
+.socialbtns li {
+	display: inline-block;
+	list-style-type: none;
+	opacity: 1;
+
+	-webkit-transition:	all .2s ease-in-out;
+	-moz-transition: 	all .2s ease-in-out;
+	-ms-transition:	 	all .2s ease-in-out;
+	-o-transition:		all .2s ease-in-out;
+	transition:			all .2s ease-in-out;
+}
+
+.socialbtns li > a:hover {
+	opacity: .5;
+}
+
+.socialbtns li a {
+	display: block;
+	width: 55px;
+	height: 51px;
+}
+
+.socialbtns li.facebook { background: url(images/social_icons.png) -9px -150px no-repeat; }
+.socialbtns li.twitter  { background: url(images/social_icons.png) -9px -74px no-repeat; }
+.socialbtns li.instagram { background: url(images/social_icons.png) -9px -4px no-repeat; }
+
+.icon-reorder {
+	color: rgba(51,51,51,.7);
+	font-size: 2.5rem;
 }
 
 .logo {

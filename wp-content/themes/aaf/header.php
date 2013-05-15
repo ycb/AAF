@@ -46,6 +46,11 @@
     <div id="page" class="hfeed site">
         <?php do_action( 'before' ); ?>
         <div id="phonenav" class="hidden-desktop">
+            <ul class="socialbtns pull-right">
+                <li class="facebook"><a href="#"></a></li>
+                <li class="twitter"><a href="#"></a></li>
+                <li class="instagram"><a href="#"></a></li>
+            </ul>
             <div class="container">
                     <div class="row">
                         <div class="span12">
