@@ -16,8 +16,6 @@ class AFF_Walker_Nav_Menu extends Walker_Nav_Menu {
      */
     function start_el( &$output, $item, $depth, $args ) {
         global $wp_query;
-
-        //print_r($item);
         
         $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
         $li_attributes = $class_names = $value = '';
@@ -44,7 +42,7 @@ class AFF_Walker_Nav_Menu extends Walker_Nav_Menu {
         $attributes .=  $args->has_children ? ' class="dropdown-toggle" data-toggle="dropdown"' : '';
 
         $item_output    =   $args->before . '<a' . $attributes . '>';
-        $item_output    .=  $args->link_before . apply_filters( 'the_title', $item->post_title, $item->ID ) . $args->link_after;
+        $item_output    .=  $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
         $item_output    .=  ( $args->has_children AND 1 > $depth ) ? ' <b class="caret"></b>' : '';
         $item_output    .=  '</a>' . $args->after;
 
@@ -102,10 +100,10 @@ class AFF_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 
 
-function AAF_nav_menu_css_class( $classes ) {
+function aaf_nav_menu_css_class( $classes ) {
     if ( in_array('current-menu-item', $classes ) OR in_array( 'current-menu-ancestor', $classes ) )
         $classes[]  =   'active';
 
     return $classes;
 }
-add_filter( 'nav_menu_css_class', 'AAF_nav_menu_css_class' );
+add_filter( 'nav_menu_css_class', 'aaf_nav_menu_css_class' );
