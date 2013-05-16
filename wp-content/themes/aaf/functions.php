@@ -178,10 +178,12 @@ function AAF_get_option( $option, $section, $default = '' ) {
     return $default;
 }
 
-add_action('wp_head', 'show_template');
+include_once("inc/sliders_cpt.php");
+
 function show_template() {
     global $template;
     echo "<!-- Template in use";
     print_r($template);
     echo "-->";
 }
+add_action('wp_head', 'show_template');
