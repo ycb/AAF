@@ -45,28 +45,43 @@
 <body <?php body_class(); ?>>
     <div id="page" class="hfeed site">
         <?php do_action( 'before' ); ?>
-        <div id="phonenav" class="hidden-desktop">
-            <ul class="socialbtns pull-right">
-                <li class="facebook"><a href="#"></a></li>
-                <li class="twitter"><a href="#"></a></li>
-                <li class="instagram"><a href="#"></a></li>
-            </ul>
+        <div id="phonenav" class="navbar hidden-desktop">
+          <div class="navbar-inner">
             <div class="container">
-                    <div class="row">
-                        <div class="span12">
-                            <nav role="navigation" class="site-navigation main-navigation clearfix">
-                                <h1 class="assistive-text"><i class="icon-reorder"></i> <?php _e( 'Menu', 'AAF' ); ?></h1>
-                                <div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'AAF' ); ?>"><?php _e( 'Skip to content', 'AAF' ); ?></a></div>
+         
+              <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </a>
+         
+              <!-- Be sure to leave the brand out there if you want it shown -->
+              <a class="brand logo" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"></a>
+              <h2 class="site-title"><?php// bloginfo( 'name' ); ?> <?php bloginfo( 'description' ); ?></h2>
 
-                                <?php wp_nav_menu( array('theme_location' => 'primary', 'container_id' => 'navigation', 'container_class' => 'site-main-menu', 'walker' => new AFF_Walker_Nav_Menu()) ); ?>
-                            </nav><!-- .site-navigation .main-navigation -->
-                        </div><!-- .span12 -->
-                    </div><!-- .row -->
-                </div><!-- .container -->
-            </div> <!-- .menu-container -->
+              <!-- Everything you want hidden at 940px or less, place within here -->
+              <div class="nav-collapse collapse">
+                <!-- .nav, .navbar-search, .navbar-form, etc -->
+                <?php wp_nav_menu( array('theme_location' => 'primary', 'container_id' => 'navigation', 'container_class' => 'nav site-main-menu', 'walker' => new AFF_Walker_Nav_Menu()) ); ?>
+              </div>
+         
+            </div>
+          </div>
         </div>
+        <header>
+            <div class="row">
+                <div class="span12">
+                    <ul class="socialbtns">
+                        <li class="facebook"><a href="#"></a></li>
+                        <li class="twitter"><a href="#"></a></li>
+                        <li class="instagram"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
 
-        <header id="masthead" class="site-header" role="banner">
+        <header id="masthead" class="site-header visible-desktop" role="banner">
             <div class="container">
                 <div class="row">
                     <div class="span12">
@@ -79,7 +94,7 @@
                 </div><!-- .row -->
             </div><!-- .container -->
 
-            <div class="menu-container visible-desktop">
+            <div class="menu-container">
                 <div class="container">
                     <div class="row">
                         <div class="span12">

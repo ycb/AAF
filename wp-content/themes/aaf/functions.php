@@ -97,7 +97,6 @@ class AAF {
         wp_enqueue_style( 'AAFstyle', $template_directory . '/style.css' );
 
         // all scripts
-        wp_enqueue_script( 'small-menu', $template_directory . '/js/small-menu.js', array('jquery'), '20120206', true );
         wp_enqueue_script( 'bootstrap', $template_directory . '/js/bootstrap.min.js', array('jquery'), '20120206', true );
 
         // comment reply on single posts

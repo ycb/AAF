@@ -38,10 +38,7 @@ Version: 1.0
 }
 
 /*Mobile Version styles*/
-#phonenav {
-	background: #bcbdc0;
-	padding-top: .8rem;
-}
+#phonenav {}
 
 #phonenav #navigation ul {
 	width: 100%;
@@ -49,7 +46,6 @@ Version: 1.0
 }
 
 #phonenav #navigation ul li {
-	background: rgba(255,255,255,0.3);
 	border-bottom: 1px solid #333;
 	display: block;
 	width: 100%;
@@ -59,11 +55,7 @@ Version: 1.0
 	border-bottom: none;
 }
 
-.socialbtns li {
-	display: inline-block;
-	list-style-type: none;
-	opacity: 1;
-
+#phonenav .menu {
 	-webkit-transition:	all .2s ease-in-out;
 	-moz-transition: 	all .2s ease-in-out;
 	-ms-transition:	 	all .2s ease-in-out;
@@ -71,36 +63,42 @@ Version: 1.0
 	transition:			all .2s ease-in-out;
 }
 
-.socialbtns li > a:hover {
-	opacity: .5;
+.navbar-inner {
+	background: none;
+	border-radius: 0;
+	padding-top: .5rem;
+}
+
+.socialbtns {
+	margin: 0 auto 1rem auto;
+	width: 11rem;
+	text-align: center;
+
+}
+.socialbtns li {
+	display: inline-block;
+	list-style-type: none;
 }
 
 .socialbtns li a {
 	display: block;
-	width: 55px;
+	width: 45px;
 	height: 45px;
+	border-radius: 80px;
 }
+	.socialbtns li > a:active {
+		box-shadow: 1px 1px 5px #ccc;
+	}
 
 .socialbtns li.facebook { background: url(images/social_icons.png)  -6px -118px no-repeat; }
 .socialbtns li.twitter  { background: url(images/social_icons.png)  -6px -58px no-repeat; }
 .socialbtns li.instagram { background: url(images/social_icons.png) -6px -2px no-repeat; }
 
-.icon-reorder {
-	color: rgba(51,51,51,.7);
-	font-size: 2.5rem;
-	margin-left: .5rem;
-}
-
-.icon-reorder:active {
-	color: #fff;
-	text-shadow: 1px 1px 20px rgba(189,34,39,0.7);
-}
-
 .logo {
 	display: block;
 	width: 110px;
 	height: 92px;
-	background: url('images/logo_mobile_inverse.png') 0 0 no-repeat;
+	background: url('images/logo_mobile.png') 0 0 no-repeat;
 	margin: 0 0 1.5rem 1.5rem;
 }
 
@@ -111,8 +109,7 @@ body {
 	background: #000;
 }
 
-.site-header h2 {
-	color: #fff;
+.site-title {
 	font-family: 'VAGRounded', Arial, Helvetica, sans-serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -182,6 +179,9 @@ body {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
+	.nav-collapse .dropdown-menu {
+		background-color: #fff;
+	}
 	.fc-event-title {
 		display: none;
 	}
