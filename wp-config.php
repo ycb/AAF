@@ -16,8 +16,8 @@
 
 
 // NEXT THREE LINES ARE FOR DEV Only DELETE AFTER LAUNCH
-define('WP_SITEURL', 'http://localhost:8888/aaf');
-define('WP_HOME', 'http://localhost:8888/aaf');
+define('WP_SITEURL', 'http://localhost/aaf');
+define('WP_HOME', 'http://localhost/aaf');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
