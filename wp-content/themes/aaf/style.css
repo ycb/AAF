@@ -106,7 +106,7 @@ body {
 	padding: 0;
 }
 .site-header {
-	background: #000;
+	background: #fff;
 }
 
 .site-title {
@@ -161,11 +161,17 @@ body {
 		}
 
 /* Large desktop */
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) {
+	body {
+		background: url('images/bg_large_screens.png') 0 0 repeat;
+	}
+}
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
-
+	body {
+		background: url('images/bg_large_screens.png') 0 0 repeat;
+	}
 	#phonenav #navigation ul {
 		width: auto;
 	}

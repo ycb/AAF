@@ -69,7 +69,7 @@
             </div>
           </div>
         </div>
-        <header>
+        <header class="hidden-desktop">
             <div class="row">
                 <div class="span12">
                     <ul class="socialbtns">
@@ -82,6 +82,9 @@
         </header>
 
         <header id="masthead" class="site-header visible-desktop" role="banner">
+            <div class="container navbar-fixed-top">
+                <p>aaaaa</p>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="span12">
