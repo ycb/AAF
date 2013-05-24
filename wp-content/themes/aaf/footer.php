@@ -19,8 +19,7 @@
                 <div class="site-info">
                     <?php do_action( 'tp_credits' ); ?>
 
-                    &copy; 2008-<?php echo date( 'Y' ) ?> <a href="http://darionovoa.info">Dario Novoa</a>. All rights are reserved.
-                    Powered by <a href="http://wordpress.org/" target="_blank" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'AAF' ); ?>" rel="generator"><?php printf( __( '%s', 'AAF' ), 'WordPress' ); ?></a>.
+                    &copy; 2008-<?php echo date( 'Y' ) ?> WordPress Consultant<a href="http://youtcustomblog.com">YourCustomBlog</a>. All rights are reserved.
 
                     <?php echo AAF_get_option( 'footer_text', 'tp_settings' ); ?>
                 </div><!-- .site-info -->
