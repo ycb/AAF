@@ -43,6 +43,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <div class="container navbar-static-top utilitynav visible-desktop">
+        <div class="span6 newsletter">Follow us as we grow&nbsp;&nbsp;<input type="text" placeholder="ENTER YOUR EMAIL ADDRESS"></div><div class="span3 donate"><a href="#">Donate Now</a></div><div class="span3 news"><a href="#">Latest News</a></div>
+    </div>
     <div id="page" class="hfeed site">
         <?php do_action( 'before' ); ?>
         <div id="phonenav" class="navbar hidden-desktop">
@@ -82,9 +85,6 @@
         </header>
 
         <header id="masthead" class="site-header visible-desktop" role="banner">
-            <div class="container navbar-fixed-top">
-                <p>aaaaa</p>
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="span12">
@@ -100,7 +100,7 @@
             <div class="menu-container">
                 <div class="container">
                     <div class="row">
-                        <div class="span12">
+                        <div class="span8 pull-right">
                             <nav role="navigation" class="site-navigation main-navigation clearfix">
                                 <h1 class="assistive-text"><i class="icon-reorder"></i> <?php _e( 'Menu', 'AAF' ); ?></h1>
                                 <div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'AAF' ); ?>"><?php _e( 'Skip to content', 'AAF' ); ?></a></div>
