@@ -100,12 +100,12 @@
             <div class="menu-container">
                 <div class="container">
                     <div class="row">
-                        <div class="span8 pull-right">
+                        <div class="span9 pull-right">
                             <nav role="navigation" class="site-navigation main-navigation clearfix">
                                 <h1 class="assistive-text"><i class="icon-reorder"></i> <?php _e( 'Menu', 'AAF' ); ?></h1>
                                 <div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'AAF' ); ?>"><?php _e( 'Skip to content', 'AAF' ); ?></a></div>
 
-                                <?php wp_nav_menu( array('theme_location' => 'primary', 'container_id' => 'navigation', 'container_class' => 'site-main-menu', 'walker' => new AFF_Walker_Nav_Menu()) ); ?>
+                                <?php wp_nav_menu( array('theme_location' => 'primary', 'container_id' => 'navigation', 'container_class' => 'site-main-menu leftcorner', 'walker' => new AFF_Walker_Nav_Menu()) ); ?>
                             </nav><!-- .site-navigation .main-navigation -->
                         </div><!-- .span12 -->
                     </div><!-- .row -->

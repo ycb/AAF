@@ -56,7 +56,30 @@ input[type="color"]
 	margin-bottom: 0;
 }
 
-/*Mobile Version styles*/
+/* Corner Effect */
+.rightcorner::after,
+.leftcorner::after {
+    width: 0px;
+    height: 0px;
+    background: #000;
+    content: '';
+    position: absolute;
+    bottom: 0;
+}
+
+.rightcorner::after {
+    right: 10px;
+	border-top: 36px solid #FFF;
+	border-right: 10px solid #000
+}
+
+.leftcorner::after {
+   	left: -10px;
+	border-top: 36px solid #FFF;
+	border-right: 10px solid #000
+}
+
+/*Mobile Menu Version styles*/
 #phonenav {}
 
 #phonenav #navigation ul {
@@ -121,15 +144,26 @@ input[type="color"]
 	margin: 0 0 1.5rem 1.5rem;
 }
 
-body {
+
+/*Rest of the Site (General)*/
+html, body {
 	padding: 0;
+    height: 100%;
 }
+
+.page {
+	min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -18.75rem;
+}
+
 .site-header .container {
 	background: #fff;
 }
 
 .site-title {
-	font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
+	font-family: 'VAGRoundedLight', Helvetica, Arial, sans-serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	font-weight: lighter;
@@ -137,6 +171,15 @@ body {
 	text-transform: uppercase;
 	padding-top: 2rem;
 	padding-right: 20px;
+}
+
+#navigation ul li ul {
+	width: auto;
+}
+
+.site-main-menu {
+	font-family: 'UniversLight', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
 }
 
 .site-main {
@@ -179,7 +222,12 @@ body {
 			margin-bottom: 0;
 		}
 
+.site-footer {
+	height: 18.75rem;/* about 300px*/
+	background: #000;
+}
 
+/*Media queries*/
 /* Large desktop */
 @media (min-width: 1200px) {
 	body {
