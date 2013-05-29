@@ -16,13 +16,7 @@ get_header();
 <div id="primary" class="content-area span8">
     <div id="content" class="site-content" role="main">
 
-        <?php while (have_posts()) : the_post(); ?>
-
-            <?php get_template_part( 'content', 'front-page' ); ?>
-
-        <?php endwhile; // end of the loop. ?>
-		
-		<div id="myCarousel" class="carousel slide">
+    	<div id="myCarousel" class="carousel slide">
 		  <ol class="carousel-indicators">
 			<?php
 	    	//arguments
@@ -57,12 +51,20 @@ get_header();
 				?>
 				<div class="carousel-caption">
                   <h4><?php echo get_the_title( $query->post->ID ) ?></h4>
-                  <p>This needs to be finished to print and trim the content here, and add the link to the post or URL Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><?php 
+                  	if( $post_meta_data['slide_url'][0] ) {
+                  		$readmorelink = '<a href="'. $post_meta_data['slide_url'][0] .'">Read More...</a>';
+                  	} else {
+                  		$postpermalink = get_permalink( $post_meta_data['slide_post_list'][0] );
+                  		$readmorelink = '<a href="'. $postpermalink .'">Read More...</a>';
+                  	}
+                  	echo wp_trim_words( $post_meta_data['slide_carousel_text'][0], $num_words = 22, $readmorelink );
+                  	?>
+                  </p>
                 </div>
 			</div>
 
 		<?php
-		print_r($post_meta_data);
 			endwhile;
 		?>
 		  </div>
@@ -70,6 +72,12 @@ get_header();
 		  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 		</div>
+
+        <?php while (have_posts()) : the_post(); ?>
+
+            <?php get_template_part( 'content', 'front-page' ); ?>
+
+        <?php endwhile; // end of the loop. ?>
 
     </div><!-- #content .site-content -->
 </div><!-- #primary .content-area -->
