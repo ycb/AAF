@@ -176,6 +176,16 @@ html, body {
 	padding-right: 20px;
 }
 
+.site-header #navigation li a:hover {
+	background: #ccc;
+	color: #000;
+	line-height: 165%;
+}
+
+.site-header #navigation > ul > li {
+	border: none;
+}
+
 #navigation ul li ul {
 	width: auto;
 }
@@ -189,9 +199,7 @@ html, body {
 	float: right;
 }
 
-.site-main {
-	padding: 0 20px;
-}
+.site-main {}
 
 .site-content {
 	padding-left: 1rem;
