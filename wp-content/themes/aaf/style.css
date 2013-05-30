@@ -172,7 +172,7 @@ html, body {
 	font-weight: lighter;
 	letter-spacing: .07rem;
 	text-transform: uppercase;
-	padding-top: 2rem;
+	padding-top: 4.4rem;
 	padding-right: 20px;
 }
 
@@ -358,6 +358,7 @@ html, body {
 	.site-title {
 		font-size: 3.2rem;
 		line-height: 3.5rem;
+		padding-top: 3.6rem;
 	}
 }
 
