@@ -261,6 +261,7 @@ html, body {
 		width: 220px;
 		height: 180px;
 		background: url('images/logo_large.png') 0 0 no-repeat;
+		margin-top: -18px;
 	}
 
 	.utilitynav {
@@ -328,7 +329,7 @@ html, body {
 		}
 
 	.site {
-		padding-top: 1.5rem;
+		padding-top: 1.0rem;
 	}
 
 	.site-title {
