@@ -44,7 +44,7 @@
 
 <body <?php body_class(); ?>>
     <div class="container navbar-static-top utilitynav visible-desktop">
-        <div class="span6 newsletter">Follow us as we grow&nbsp;&nbsp;<input type="text" placeholder="ENTER YOUR EMAIL ADDRESS"></div><div class="span3 donate"><a href="#">Donate Now</a></div><div class="span3 news"><a href="#">Latest News</a></div>
+        <div class="span6 newsletter">Follow us as we grow&nbsp;&nbsp;<input type="text" placeholder="ENTER YOUR EMAIL ADDRESS"></div><div class="span3 donate"><a href="http://174.132.145.219/~omega25/wp/?page_id=23">Donate Now</a></div><div class="span3 news"><a href="http://174.132.145.219/~omega25/wp/?cat=13">Latest News</a></div>
     </div>
     <div id="page" class="hfeed site">
         <?php do_action( 'before' ); ?>

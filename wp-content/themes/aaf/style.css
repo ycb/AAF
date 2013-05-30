@@ -237,6 +237,8 @@ html, body {
 	color: #fff;
 }
 
+#comments {display: none;}
+
 .site-footer {
 	height: 18.75rem;/* about 300px*/
 	background: #000;
