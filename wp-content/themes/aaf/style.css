@@ -57,27 +57,6 @@ input[type="color"]
 }
 
 /* Corner Effect */
-.rightcorner::after,
-.leftcorner::after {
-    width: 0px;
-    height: 0px;
-    background: #000;
-    content: '';
-    position: absolute;
-    bottom: 0;
-}
-
-.rightcorner::after {
-    right: 10px;
-	border-top: 36px solid #FFF;
-	border-right: 10px solid #000
-}
-
-.leftcorner::after {
-   	left: -10px;
-	border-top: 36px solid #FFF;
-	border-right: 10px solid #000
-}
 
 /*Mobile Menu Version styles*/
 #phonenav {}
@@ -326,7 +305,7 @@ html, body {
 		}
 
 	.site {
-		padding-top: 1rem;
+		padding-top: 1.5rem;
 	}
 
 	.site-title {
@@ -347,7 +326,6 @@ html, body {
 	}
 
 	.visible-desktop .site-navigation {
-		margin-top: -3.9rem;
 		background: #000;
 	}
 }

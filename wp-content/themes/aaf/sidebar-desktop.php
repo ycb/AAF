@@ -6,6 +6,7 @@
  * @package AAF - 2013 1.0
  */
 ?>
+<div><!-- small trick so bootstrap doesn't think this is the first child. --></div>
 <div id="secondary" class="span4 sidebar" role="complementary">
     <div class="widget-area">
 
