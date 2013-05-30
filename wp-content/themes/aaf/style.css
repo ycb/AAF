@@ -57,6 +57,25 @@ input[type="color"]
 }
 
 /* Corner Effect */
+.corner-left:before {
+	content: "";
+	background: url(images/corners.png) left top repeat;
+	width: 10px;
+	height: 36px;
+	position: absolute;
+	left: -10px;
+	top: 0;
+}
+
+.corner-right:after {
+	content: "";
+	background: url(images/corners.png) right top repeat;
+	width: 10px;
+	height: 36px;
+	position: absolute;
+	right: -10px;
+	top: 0;
+}
 
 /*Mobile Menu Version styles*/
 #phonenav {}
@@ -164,6 +183,10 @@ html, body {
 .site-main-menu {
 	font-family: 'UniversLight', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
+}
+
+#navigation ul {
+	float: right;
 }
 
 .site-main {
@@ -327,6 +350,13 @@ html, body {
 
 	.visible-desktop .site-navigation {
 		background: #000;
+	}
+}
+
+@media (min-width: 1200px) {
+	.site-title {
+		font-size: 3.2rem;
+		line-height: 3.5rem;
 	}
 }
 
