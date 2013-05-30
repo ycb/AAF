@@ -73,7 +73,7 @@
           </div>
         </div>
         <header class="hidden-desktop">
-            <div class="row">
+            <div class="row-fluid">
                 <div class="span12">
                     <ul class="socialbtns">
                         <li class="facebook"><a href="#"></a></li>
@@ -86,7 +86,7 @@
 
         <header id="masthead" class="site-header visible-desktop" role="banner">
             <div class="container">
-                <div class="row">
+                <div class="row-fluid">
                     <div class="span12">
                         <hgroup>
                             
@@ -94,13 +94,13 @@
                             <h2 class="site-title"><?php// bloginfo( 'name' ); ?> <?php bloginfo( 'description' ); ?></h2>
                         </hgroup>
                     </div><!-- .span12 -->
-                </div><!-- .row -->
+                </div><!-- .row-fluid -->
             </div><!-- .container -->
 
             <div class="menu-container">
                 <div class="container">
-                    <div class="row">
-                        <div class="span9 pull-right">
+                    <div class="row-fluid">
+                        <div class="span12 pull-right">
                             <nav role="navigation" class="site-navigation main-navigation clearfix">
                                 <h1 class="assistive-text"><i class="icon-reorder"></i> <?php _e( 'Menu', 'AAF' ); ?></h1>
                                 <div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'AAF' ); ?>"><?php _e( 'Skip to content', 'AAF' ); ?></a></div>
@@ -108,11 +108,11 @@
                                 <?php wp_nav_menu( array('theme_location' => 'primary', 'container_id' => 'navigation', 'container_class' => 'site-main-menu leftcorner', 'walker' => new AFF_Walker_Nav_Menu()) ); ?>
                             </nav><!-- .site-navigation .main-navigation -->
                         </div><!-- .span12 -->
-                    </div><!-- .row -->
+                    </div><!-- .row-fluid -->
                 </div><!-- .container -->
             </div> <!-- .menu-container -->
         </header><!-- #masthead .site-header -->
 
         <div id="main" class="site-main">
             <div class="container content-wrap">
-                <div class="row">
+                <div class="row-fluid">

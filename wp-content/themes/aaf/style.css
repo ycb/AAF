@@ -191,6 +191,10 @@ html, body {
 	padding: 0 20px;
 }
 
+.site-content {
+	padding-left: 1rem;
+}
+
 .entry-header {
 	display: none;
 }
@@ -246,7 +250,7 @@ html, body {
 
 /*Media queries*/
 /* Large desktop */
-@media (min-width: 1200px) {
+@media (min-width: 979px) {
 	body {
 		background: url('images/bg_large_screens.png') 0 0 repeat;
 	}
@@ -345,28 +349,6 @@ html, body {
 	.visible-desktop .site-navigation {
 		margin-top: -3.9rem;
 		background: #000;
-	}
-}
-
-/* smaller older desktops */
-@media (min-width: 980px) and (max-width: 1199px) { 
-
-	div.utilitynav {
-		display: none !important;
-	}
-
-	.site-header .site-navigation {
-		height: 25px;
-		background: #000;
-	}
-
-		.leftcorner::after {
-			border-top: 25px solid #FFF;
-		}
-	
-	.site-header #navigation li a {
-		font-size: .8rem;
-		padding: 2px 6px;
 	}
 }
 
