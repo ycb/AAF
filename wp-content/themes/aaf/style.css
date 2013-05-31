@@ -77,6 +77,14 @@ input[type="color"]
 	top: 0;
 }
 
+.btn {
+	text-transform: uppercase;
+}
+.btn-danger {
+	background: #BE2025;
+	background-image: none;
+}
+
 /*Mobile Menu Version styles*/
 #phonenav {}
 
@@ -295,6 +303,19 @@ html, body {
 			padding-top: .7rem;
 			box-sizing: border-box;
 		}
+
+		.utilitynav a {
+			-webkit-transition:	all .2s ease-out;
+			-moz-transition: 	all .2s ease-out;
+			-ms-transition:	 	all .2s ease-out;
+			-o-transition:		all .2s ease-out;
+			transition:			all .2s ease-out;
+		}
+
+		.utilitynav a:hover {
+			padding-top: .35rem;
+		}
+
 		div.newsletter {
 			background: #bcbdbf;
 			color: #333;
