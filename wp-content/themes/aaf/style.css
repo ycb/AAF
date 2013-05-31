@@ -213,6 +213,20 @@ html, body {
 	padding-left: 1rem;
 }
 
+.carousel-caption {
+	font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	letter-spacing: .08rem;
+	color: #fff;
+}
+.carousel-caption h4 {
+	font-size: 2rem;
+	font-weight: lighter;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	color: #BE2025;
+}
+
 .entry-header {
 	display: none;
 }
@@ -271,8 +285,6 @@ html, body {
 	.widget > div {
 		padding-right: .5rem;
 	}
-
-#comments {display: none;}
 
 .site-footer {
 	height: 18.75rem;/* about 300px*/
