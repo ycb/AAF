@@ -249,6 +249,15 @@ html, body {
 			margin-bottom: 0;
 		}
 
+
+.textwidget, .eo-events-widget {
+	padding-right: 1rem;
+		}
+
+.sidebar-image {
+	margin:  .1rem .1rem 0 0;
+		}
+
 .widget .widget-title {
 	font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
 	font-weight: lighter;
