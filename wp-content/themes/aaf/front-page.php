@@ -72,12 +72,52 @@ get_header();
 		  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 		</div>
+		
+		<?php 	//latest updates arguments
+			$args = array(
+				'category_name' => 'news-updates'
+			);
+		
+			// The Query
+			$querylatestupdates = new WP_Query( $args );
+		
+			// The Loop
+			while ( $querylatestupdates->have_posts() ) :
+				$querylatestupdates->the_post();
+				get_template_part( 'content', 'front-page' );
+			endwhile;
+		?>
 
-        <?php while (have_posts()) : the_post(); ?>
+		<?php 	//latest upcoming events arguments
+			$argsupevents = array(
+				'post_type' => 'events',
+				'category_name' => 'featured'
+			);
+		
+			// The Query
+			$queryupevents = new WP_Query( $argsupevents );
+		
+			// The Loop
+			while ( $queryupevents->have_posts() ) :
+				$queryupevents->the_post();
+				get_template_part( 'content', 'front-page' );
+			endwhile;
+		?>
 
-            <?php get_template_part( 'content', 'front-page' ); ?>
-
-        <?php endwhile; // end of the loop. ?>
+		<?php 	//latest featured arguments
+			$argsfeatured = array(
+				'category_name' => 'featured'
+			);
+		
+			// The Query
+			$queryfeatured = new WP_Query( $argsfeatured );
+		
+			// The Loop
+			while ( $queryfeatured->have_posts() ) :
+				$queryfeatured->the_post();
+				get_template_part( 'content', 'front-page' );
+			endwhile;
+		?>
 
     </div><!-- #content .site-content -->
 </div><!-- #primary .content-area -->

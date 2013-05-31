@@ -13,7 +13,7 @@
     </header><!-- .entry-header -->
 
     <div class="entry-content">
-        <?php the_content( __( '<span class="meta-nav btn btn-danger btn-large btn-block">READ MORE</span>', 'AAF' ) ); ?>
+        <?php the_content( __( '<span class="meta-nav btn btn-danger">READ MORE</span>', 'AAF' ) ); ?>
         <?php wp_link_pages( array('before' => '<div class="page-links">' . __( 'Pages:', 'AAF' ), 'after' => '</div>') ); ?>
         <?php edit_post_link( __( 'Edit', 'AAF' ), '<span class="edit-link">', '</span>' ); ?>
     </div><!-- .entry-content -->
