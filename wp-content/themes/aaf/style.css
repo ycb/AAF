@@ -259,6 +259,10 @@ html, body {
 	color: #fff;
 }
 
+	.widget > div {
+		padding-right: .5rem;
+	}
+
 #comments {display: none;}
 
 .site-footer {
