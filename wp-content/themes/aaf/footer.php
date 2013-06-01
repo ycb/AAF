@@ -21,15 +21,25 @@
                     <br>1060 Tennessee st, San Francisco, CA 
                     <br>(415) 826-8674 (415) 826-8674
                 </div>
-                <nav class="span3 pull-left"></nav>
-                <nav class="span8 pull-right offset1"></nav>
+            
+
+    <nav class="span6 pull-right">
+
+        <?php wp_nav_menu( array('theme_location' => 'footer', 'container_id' => 'footer-navigation', 'container_class' => 'nav footer-menu') ); ?>
+
+    </nav>
+
+    <nav class="span4 pull-left">
+
+        <?php wp_nav_menu( array('theme_location' => 'sub-footer', 'container_id' => 'sub-footer-navigation', 'container_class' => 'nav sub-footer-menu') ); ?>
+               
+    </nav>
 
                 <div class="site-info span12">
-                    <span class="pull-left span5">
-                        <?php do_action( 'tp_credits' ); ?>
-                    </span>
 
-                    <span class="pull-right span5 offset1">&copy; 2008-<?php echo date( 'Y' ) ?> WordPress Consultant <a href="http://youtcustomblog.com">YourCustomBlog</a>.</span>
+                    <span class="pull-left span5 copyright">&copy; <?php echo date( 'Y' ) ?> Omega Boys Club</span>
+                    
+                    <span class="pull-right span5 credits">WordPress Consultant: <a href="http://youtcustomblog.com">YourCustomBlog</a></span>
 
                     <?php echo AAF_get_option( 'footer_text', 'tp_settings' ); ?>
                 </div><!-- .site-info -->

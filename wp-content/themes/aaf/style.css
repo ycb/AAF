@@ -264,10 +264,6 @@ html, body {
 		}
 
 
-.textwidget, .eo-events-widget {
-	padding-right: 1rem;
-		}
-
 .sidebar-image {
 	margin:  .1rem .1rem 0 0;
 		}
@@ -286,11 +282,37 @@ html, body {
 		padding-right: .5rem;
 	}
 
+	.donate-ad {
+		background: #000;
+		font-family: 'UniversLight' Arial, Helvetica, sans-serif;
+		color: #fff;
+		padding: 0 0 1rem 1rem;
+		text-align: center;
+	}
+
+	.donate-ad h3 {
+		color: #fff;
+		margin-bottom: 0;
+		font-size: 1.5rem;
+	}
+
+	.donate-ad p {
+		margin: 0 1rem 1rem 0;
+	}
+
+	.donate-ad .btn-block {
+		width: 75%;
+		margin: 0 auto;
+		font-size: 1.25rem;
+		padding: 12px; 
+	}
+
 .site-footer {
-	height: 18.75rem;/* about 300px*/
+	height: 15.5rem;/* about 300px*/
 	background: #000;
 	color: #fff;
-	font-family: 'UniversLight';
+	font-family: 'UniversLight' Arial, Helvetica, sans-serif;
+	line-height: 225%;
 }
 
 .site-footer h3 {		
@@ -305,6 +327,34 @@ font-size: 1.25em;
 img.map {
 	margin-right: 1em;
 }
+
+.site-footer nav {
+	margin-top: 1rem;
+}
+
+.site-footer nav > div, .site-footer ul {
+	display: inline;
+	margin-left: 0;
+}
+
+.site-footer .nav li {
+	list-style: none;
+	display: inline;
+}
+
+ .site-footer nav .footer-menu ul, .credits {
+	float: right;
+	padding-right: 30px;
+	text-align: right;
+}
+
+.site-info{
+	margin-left: 0;
+}
+
+#comments {display: none;}
+
+
 /*Media queries*/
 /* Large desktop */
 @media (min-width: 979px) {
@@ -458,4 +508,17 @@ and (orientation: landscape)
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {  }
+@media (max-width: 480px) { 
+
+.site-content {
+padding-right: 1rem;
+}
+
+	.widget > div {
+		padding-left: .5rem;
+	}
+
+	.EO_Event_List_Widget {
+		padding: 0 .5rem;
+	}
+	 }

@@ -73,6 +73,8 @@ class AAF {
          */
         register_nav_menus( array(
             'primary' => __( 'Primary Menu', 'AAF' ),
+            'footer' => __( 'Footer Menu', 'AAF' ),
+            'sub-footer' => __( 'Sub-Footer', 'AAF' ),
         ) );
 
         /**
