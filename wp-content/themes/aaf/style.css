@@ -21,15 +21,15 @@ Version: 1.0
 }
 
 @font-face {
-  font-family: 'UniversLight';
-  src: url('font/univers-45-light.eot'); /* IE9 Compat Modes */
-  src: url('font/univers-45-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('font/univers-45-light.woff') format('woff'), /* Modern Browsers */
-       url('font/univers-45-light.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('font/univers-45-light.svg#emibwbbsnf') format('svg'); /* Legacy iOS */
-       
-  font-style:  normal;
-  font-weight: 200;
+    font-family: 'UniversLight';
+    src: url('font/univers_45_light-webfont.eot');
+    src: url('font/univers_45_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/univers_45_light-webfont.woff') format('woff'),
+         url('font/univers_45_light-webfont.ttf') format('truetype'),
+         url('font/univers_45_light-webfont.svg#univers_45_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /*Globals*/
