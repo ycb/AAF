@@ -227,10 +227,6 @@ html, body {
 	color: #BE2025;
 }
 
-.entry-header {
-	display: none;
-}
-
 .sidebarmobile {}
 
 .sidebarmobile ul {
@@ -352,8 +348,31 @@ img.map {
 	margin-left: 0;
 }
 
-#comments {display: none;}
+/*front page only*/
+.home.page .entry-header {
+	display: none;
+}
 
+.home.page .site-content header {
+	position: relative;
+}
+.home.page .sectiontitle {
+	font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	letter-spacing: .08rem;
+	text-transform: uppercase;
+	background: #333;
+	padding: 0 1rem;
+	color: #fff;
+}
+	.sectiontitle:after {
+		content: " ";
+		background: url('images/40px_right_corner_grey.png') 0 0 no-repeat;
+		height: 40px;
+		width: 10px;
+		position: absolute;
+		right: -10px;
+	}
 
 /*Media queries*/
 /* Large desktop */
