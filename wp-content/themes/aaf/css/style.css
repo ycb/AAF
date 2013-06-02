@@ -183,7 +183,7 @@ p {
   height: 0;
 }
 .site-header #navigation li:hover {
-  background: #fff;
+
 }
 .site-header #navigation li:hover a {
   text-shadow: none;

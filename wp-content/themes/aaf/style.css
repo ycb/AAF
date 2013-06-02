@@ -184,10 +184,19 @@ html, body {
 	padding-right: 20px;
 }
 
+.site-header #navigation li:hover {
+	background: #ccc;
+}
+
 .site-header #navigation li a:hover {
 	background: #ccc;
 	color: #000;
-	line-height: 165%;
+	line-height: 165%
+}
+
+.site-header #navigation li.current-menu-item a {
+	padding: 6px 13px;
+	line-height: 150%
 }
 
 .site-header #navigation > ul > li {
@@ -196,6 +205,22 @@ html, body {
 
 #navigation ul li ul {
 	width: auto;
+}
+
+#navigation .dropdown-menu > li > a, 
+#navigation .dropdown-menu > li > a:hover, 
+#navigation .dropdown-menu > li > a:focus {
+	padding: 1rem 13px;
+	line-height: 20%;
+}
+
+#navigation .dropdown-menu > li.active > a, 
+#navigation .dropdown-menu > .active > a:hover, 
+#navigation .dropdown-menu > .active > a:focus {
+	background: #BE2025;
+	color: #fff;
+	padding: 1rem 13px;
+	line-height: 20%;
 }
 
 .site-main-menu {
