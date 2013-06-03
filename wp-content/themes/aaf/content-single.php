@@ -19,11 +19,6 @@
                 </span>
             <?php endif; // End if categories ?>
 
-            <?php if ( !post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-                <span class="sep"> | </span>
-                <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'AAF' ), __( '1 Comment', 'AAF' ), __( '% Comments', 'AAF' ) ); ?></span>
-            <?php endif; ?>
-
             <?php edit_post_link( __( 'Edit', 'AAF' ), '<span class="sep"> | </span><span class="edit-link"><i class="icon-edit"></i> ', '</span>' ); ?>
 
         <?php endif; // End if 'post' == get_post_type() ?>
