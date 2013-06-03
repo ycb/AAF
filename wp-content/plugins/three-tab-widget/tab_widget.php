@@ -41,14 +41,16 @@ class AAF_Impact extends WP_Widget {
 		$fact1 = apply_filters( 'the_content', $instance['fact1'] );
 		$fact2 = apply_filters( 'the_content', $instance['fact2'] );
 		$fact3 = apply_filters( 'the_content', $instance['fact3'] );
+		$morelink = $instance['morelink'];
+
 		echo $before_widget;
 		if ( ! empty( $title ) )
 			echo $before_title . $title . $after_title;
 		?>		 
 		<div class="tab-content">
-		  <div class="tab-pane active" id="fact1"><?php echo "fact1"; ?></div>
-		  <div class="tab-pane" id="fact2"><?php echo "fact2"; ?></div>
-		  <div class="tab-pane" id="fact3"><?php echo "fact3"; ?></div>
+		  <div class="tab-pane active" id="fact1"><?php echo $fact1; ?></div>
+		  <div class="tab-pane" id="fact2"><?php echo $fact2; ?></div>
+		  <div class="tab-pane" id="fact3"><?php echo $fact3; ?></div>
 		</div>
 
 		<ul class="nav nav-tabs" id="afffacts">
@@ -56,6 +58,8 @@ class AAF_Impact extends WP_Widget {
 		  <li><a href="#fact2">&nbsp;</a></li>
 		  <li><a href="#fact3">&nbsp;</a></li>
 		</ul>
+
+		<a href="<?php echo $morelink; ?>" class="btn btn-danger btn-block">Learn More</a>
 		 
 		<script>
 		  jQuery(function () {
@@ -84,9 +88,10 @@ class AAF_Impact extends WP_Widget {
 	public function update( $new_instance, $old_instance ) {
 		$instance = array();
 		$instance['title'] = strip_tags( $new_instance['title'] );
-		$instance['fact1'] = strip_tags( $new_instance['fact1'] );
-		$instance['fact2'] = strip_tags( $new_instance['fact2'] );
-		$instance['fact3'] = strip_tags( $new_instance['fact3'] );
+		$instance['fact1'] = $new_instance['fact1'];
+		$instance['fact2'] = $new_instance['fact2'];
+		$instance['fact3'] = $new_instance['fact3'];
+		$instance['morelink'] = strip_tags( $new_instance['morelink'] );
 		return $instance;
 	}
 	/**
@@ -115,6 +120,10 @@ class AAF_Impact extends WP_Widget {
 		if ( isset( $instance[ 'fact3' ] ) ) {
 			$fact3 = $instance[ 'fact3' ];
 		}
+
+		if ( isset( $instance[ 'morelink' ] ) ) {
+			$morelink = $instance[ 'morelink' ];
+		}
 		?>
 
 		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
@@ -125,6 +134,8 @@ class AAF_Impact extends WP_Widget {
 		<textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id( 'fact2' ); ?>" name="<?php echo $this->get_field_name( 'fact2' ); ?>"><?php echo esc_attr( $fact2 ); ?></textarea>
 		<label for="<?php echo $this->get_field_id( 'fact3' ); ?>"><?php _e( 'Fact 3:' ); ?></label>
 		<textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id( 'fact3' ); ?>" name="<?php echo $this->get_field_name( 'fact3' ); ?>"><?php echo esc_attr( $fact3 ); ?></textarea>
+		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+		<input class="widefat" id="<?php echo $this->get_field_id( 'morelink' ); ?>" name="<?php echo $this->get_field_name( 'morelink' ); ?>" type="text" value="<?php echo esc_attr( $morelink ); ?>" placeholder = "http://someurl.com" />
 		<?php
 	}
 } // class AAF_Impact
