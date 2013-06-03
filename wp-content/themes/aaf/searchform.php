@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying search forms in Tareq\'s Planet - 2013
+ * The template for displaying search forms
  *
  * @package AAF
  * @package AAF - 2013 1.0
