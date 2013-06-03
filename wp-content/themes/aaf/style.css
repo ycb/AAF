@@ -51,9 +51,12 @@ input[type="email"],
 input[type="url"],
 input[type="search"],
 input[type="tel"],
-input[type="color"]
-.uneditable-input {
+input[type="color"] .uneditable-input {
 	margin-bottom: 0;
+}
+
+.noleftmargin {
+	margin-left: 0;
 }
 
 /* Corner Effect */
@@ -386,6 +389,25 @@ font-size: 1.25em;
 
 }
 
+.site-footer .socialbtns {
+	border-bottom: 1px solid rgba(255,255,255,.2)
+}
+
+	.site-footer .socialbtns li {
+		margin-right: 2rem;
+	}
+
+.site-footer input.field {
+	background: #333;
+	border-radius: 0;
+	border: none;
+	padding-left: 2rem;
+}
+	.icon-search {
+		position: absolute;
+		margin: .6rem 0 0 .5rem;
+	}
+
 img.map {
 	margin-right: 1em;
 }
@@ -522,7 +544,7 @@ img.map {
 			color: #333;
 			padding-top: .5rem;
 		}
-			.newsletter input {
+			.newsletter input[type="text"] {
 				background: #333;
 				color: #ccc;
 				border-radius: 0;
