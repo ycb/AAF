@@ -8,12 +8,18 @@
 ?>
 <?php global $more; $more = 0; ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<aside class="front-thumb">
+		<?php the_post_thumbnail('medium');  ?>
+	</aside>
     <header class="entry-header">
         <h1 class="entry-title graybg"><?php the_title(); ?></h1>
     </header><!-- .entry-header -->
 
     <div class="entry-content">
-        <?php the_content( __( '<span class="meta-nav btn btn-danger">READ MORE</span>', 'AAF' ) ); ?>
+        <?php 
+        	$content = get_the_content('');
+        	echo wp_trim_words( $content, $num_words = 55, '' ) . '<br><a href="' . get_permalink() . '"><span class="meta-nav btn btn-danger">READ MORE</span></a>';
+        ?>
         <?php wp_link_pages( array('before' => '<div class="page-links">' . __( 'Pages:', 'AAF' ), 'after' => '</div>') ); ?>
         <?php edit_post_link( __( 'Edit', 'AAF' ), '<span class="edit-link">', '</span>' ); ?>
     </div><!-- .entry-content -->

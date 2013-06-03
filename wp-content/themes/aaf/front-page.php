@@ -73,12 +73,13 @@ get_header();
 		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 		</div>
 		
-		<header class="span6">
+		<header class="span7">
 			<h1 class="sectiontitle">Latest Update</h1>
 		</header>
 		<?php 	//latest updates arguments
 			$args = array(
-				'category_name' => 'news-updates'
+				'category_name' => 'news-updates',
+				'posts_per_page' => 1
 			);
 		
 			// The Query
@@ -91,13 +92,14 @@ get_header();
 			endwhile;
 		?>
 		
-		<header class="span6">
+		<header class="span7">
 			<h1 class="sectiontitle">Upcoming Events</h1>
 		</header>
 		<?php 	//latest upcoming events arguments
 			$argsupevents = array(
 				'post_type' => 'events',
-				'category_name' => 'featured'
+				'category_name' => 'featured',
+				'posts_per_page' => 1
 			);
 		
 			// The Query
@@ -110,12 +112,13 @@ get_header();
 			endwhile;
 		?>
 		
-		<header class="span6">
+		<header class="span7">
 			<h1 class="sectiontitle">ALIVE &amp; FREE INFOGRAPHIC</h1>
 		</header>
 		<?php 	//latest featured arguments
 			$argsfeatured = array(
-				'category_name' => 'featured'
+				'category_name' => 'featured',
+				'posts_per_page' => 1
 			);
 		
 			// The Query
@@ -131,6 +134,6 @@ get_header();
     </div><!-- #content .site-content -->
 </div><!-- #primary .content-area -->
 
-<div class="hidden-desktop sidebarmobile"><?php get_sidebar('mobile'); ?></div>
-<div class="visible-desktop sidebardesktop"><?php get_sidebar('desktop'); ?></div>
+<div class="hidden-desktop sidebarmobile span4"><?php get_sidebar('mobile'); ?></div>
+<div class="visible-desktop sidebardesktop span4"><?php get_sidebar('desktop'); ?></div>
 <?php get_footer(); ?>

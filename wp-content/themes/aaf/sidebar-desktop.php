@@ -7,7 +7,7 @@
  */
 ?>
 <div><!-- small trick so bootstrap doesn't think this is the first child. --></div>
-<div id="secondary" class="span4 sidebar" role="complementary">
+<div id="secondary" class="sidebar" role="complementary">
     <div class="widget-area">
 
         <?php do_action( 'before_sidebar' ); ?>
