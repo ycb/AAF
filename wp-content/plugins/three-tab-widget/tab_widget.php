@@ -63,8 +63,6 @@ class AAF_Impact extends WP_Widget {
 		 
 		<script>
 		  jQuery(function () {
-		    //activate one
-		    jQuery('#afffacts a:last').tab('show');
 		    //bind the rest.
 		    jQuery('#afffacts a').click(function (e) {
 			  e.preventDefault();

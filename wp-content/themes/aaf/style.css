@@ -287,7 +287,7 @@ html, body {
 
 .sidebar-image {
 	margin:  .1rem .1rem 0 0;
-		}
+}
 
 .widget .widget-title {
 	font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
@@ -299,9 +299,9 @@ html, body {
 	color: #fff;
 }
 
-.widget .widget-title:first-child
-
-{margin-top: 0;}
+.widget .widget-title:first-child {
+	margin-top: 0;
+}
 
 	.widget > div {
 		padding-right: .5rem;
@@ -363,6 +363,10 @@ html, body {
 		margin: 0 auto;
 		font-size: 1.25rem;
 		padding: 12px; 
+	}
+
+	code {
+		white-space: normal;
 	}
 
 .site-footer {
