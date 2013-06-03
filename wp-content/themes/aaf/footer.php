@@ -31,7 +31,7 @@
 
     <nav class="span4 pull-left">
 
-        <?php wp_nav_menu( array('theme_location' => 'sub-footer', 'container_id' => 'sub-footer-navigation', 'container_class' => 'nav sub-footer-menu') ); ?>
+        <?php wp_nav_menu( array('theme_location' => 'sub-footer', 'link_after' => '<span class="sep"> |</span>', 'container_id' => 'sub-footer-navigation', 'container_class' => 'nav sub-footer-menu') ); ?>
                
     </nav>
 

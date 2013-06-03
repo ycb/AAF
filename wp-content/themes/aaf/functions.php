@@ -198,3 +198,13 @@ function show_template() {
     echo "-->";
 }
 add_action('wp_head', 'show_template');
+
+//nav menu
+function nav_menu_first_last( $items ) {
+ $pos = strrpos($items, 'class="menu-item', -1);
+ $items=substr_replace($items, 'menu-item-last ', $pos+7, 0);
+ $pos = strpos($items, 'class="menu-item');
+ $items=substr_replace($items, 'menu-item-first ', $pos+7, 0);
+ return $items;
+}
+add_filter( 'wp_nav_menu_items', 'nav_menu_first_last' );

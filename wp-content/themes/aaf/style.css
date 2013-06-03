@@ -400,10 +400,27 @@ img.map {
 	display: inline;
 }
 
+.site-footer  a:hover{
+	color: #08c;
+	text-decoration: underline;
+}
+
+.footer-menu {
+	text-transform: uppercase;
+}
+
+.footer-menu li {
+	padding-left: .6rem;
+}
+
  .site-footer nav .footer-menu ul, .credits {
 	float: right;
 	padding-right: 30px;
 	text-align: right;
+}
+
+.site-footer .nav li.menu-item-last span.sep {
+	display: none;
 }
 
 .site-info{
@@ -431,6 +448,10 @@ img.map {
 		width: 10px;
 		position: absolute;
 		right: -10px;
+	}
+
+	#comments {
+		display: none;
 	}
 
 /*Media queries*/
