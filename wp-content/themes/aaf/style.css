@@ -5,6 +5,30 @@
     font-style: normal;
 }
 .center { margin: 0 auto }
+
+select, textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] .uneditable-input {
+	margin-bottom: 0;
+}
+
+.noleftmargin {
+	margin-left: 0;
+}
+
+/* Corner Effect */
 .corner-left:before {
     content: "";
     background: url(http://www.prettyprinter.de/kleider/blue-sand/images/corners.png) left top repeat;
@@ -320,6 +344,7 @@ body {
 	}
 
 .site-footer {
+<<<<<<< HEAD
     height: 15.5rem;
     background: #000;
     color: #fff;
@@ -333,14 +358,42 @@ body {
     font-size: 1.25em;
     margin: 0;
 }
+
 .footer-right-block { width: 340px }
+
 img.map { margin-right: 1em }
+
 .site-footer nav { margin-top: 1rem }
-.site-footer nav>div,
-.site-footer ul {
+
+.site-footer nav>div, .site-footer ul {
     display: inline;
     margin-left: 0;
+	height: 15.5rem;/* about 300px*/
+	background: #000;
+	color: #fff;
+	font-family: 'UniversLight' Arial, Helvetica, sans-serif;
+	line-height: 225%;
 }
+
+.site-footer .socialbtns {
+	border-bottom: 1px solid rgba(255,255,255,.2)
+}
+
+.site-footer .socialbtns li {
+		margin-right: 2rem;
+	}
+
+.site-footer input.field {
+	background: #333;
+	border-radius: 0;
+	border: none;
+	padding-left: 2rem;
+}
+.icon-search {
+		position: absolute;
+		margin: .6rem 0 0 .5rem;
+	}
+
 .site-footer .nav li {
     list-style: none;
     display: inline;
@@ -350,8 +403,8 @@ img.map { margin-right: 1em }
     text-decoration: underline;
 }
 .footer-menu li { padding-left: .6rem }
-.site-footer nav .footer-menu ul,
-.credits {
+
+.site-footer nav .footer-menu ul,.credits {
     float: right;
     padding-right: 30px;
     text-align: right;
@@ -391,6 +444,7 @@ input[type="color"].uneditable-input,
 .widget .nav-tabs { border-bottom: none }
 .widget .widget-title,
 .home.page .sectiontitle {
+<<<<<<< HEAD
     font-family: VAGRoundedLight,Arial,Helvetica,sans-serif;
     font-weight: lighter;
     letter-spacing: .08rem;
@@ -529,3 +583,226 @@ input[type="color"].uneditable-input,
     .widget>div { padding-left: .5rem }
     .EO_Event_List_Widget { padding: 0 .5rem }
 }
+=======
+	font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	letter-spacing: .08rem;
+	text-transform: uppercase;
+	background: #333;
+	padding: 0 1rem;
+	color: #fff;
+}
+	.sectiontitle:after {
+		content: " ";
+		background: url('images/40px_right_corner_grey.png') 0 0 no-repeat;
+		height: 40px;
+		width: 10px;
+		position: absolute;
+		right: -10px;
+	}
+
+	#comments {
+		display: none;
+	}
+
+/*Media queries*/
+/*Larger modern laptops and desktops*/
+@media (min-width: 1200px) {
+	.site-title {
+		font-size: 3.2rem;
+		line-height: 3.5rem;
+		padding-top: 3.6rem;
+	}
+}
+
+/* older desktop, laptops and tablets. */
+@media (min-width: 979px) {
+	body {
+		background: url('images/bg_large_screens.png') 0 0 repeat;
+	}
+
+	.logo {
+		width: 220px;
+		height: 180px;
+		background: url('images/logo_large.png') 0 0 no-repeat;
+		margin-top: -18px;
+	}
+
+	.utilitynav {
+		background: #000;
+		height: 45px;
+		font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		box-sizing: border-box;
+	}
+
+	.utilitynav a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		color: #fff;
+	}
+		.utilitynav div {
+			height: 100%;
+			margin-left: auto;
+			text-align: center;
+			padding-top: .7rem;
+			box-sizing: border-box;
+		}
+
+		.utilitynav a {
+			-webkit-transition:	all .2s ease-out;
+			-moz-transition: 	all .2s ease-out;
+			-ms-transition:	 	all .2s ease-out;
+			-o-transition:		all .2s ease-out;
+			transition:			all .2s ease-out;
+		}
+
+		.utilitynav a:hover {
+			padding-top: .35rem;
+		}
+
+		div.newsletter {
+			background: #bcbdbf;
+			color: #333;
+			padding-top: .5rem;
+		}
+			.newsletter input[type="text"] {
+				background: #333;
+				color: #ccc;
+				border-radius: 0;
+			}
+			.newsletter input::-webkit-input-placeholder {
+			   color: #fff;
+			   font-size: .7rem;
+			}
+
+			.newsletter input:-moz-placeholder { /* Firefox 18- */
+			   color: #fff;
+			   font-size: .7rem;  
+			}
+
+			.newsletter input::-moz-placeholder {  /* Firefox 19+ */
+			   color: #fff;
+			   font-size: .7rem;  
+			}
+
+			.newsletter input:-ms-input-placeholder {  
+			   color: #fff;
+			   font-size: .7rem;  
+			}
+		.donate {
+			background: #BE2025;
+		}
+		.news {
+			background: #000;
+			padding-left: 35px;
+		}
+
+		.icon-news {
+			color: #BE2025;
+		}
+
+	.site {
+		padding-top: 1.0rem;
+	}
+
+	.site-title {
+		font-size: 2.75rem;
+		line-height: 3rem;
+		text-align: right;
+		color: #404041;
+	}
+
+	.content-wrap {
+		background: #fff;
+		padding: 1.5rem 0;
+		box-sizing: border-box;
+	}
+
+	.site-header .menu-container {
+		margin-bottom: 0;
+	}
+
+	.visible-desktop .site-navigation {
+		background: #000;
+	}
+	
+	/*Front page only*/
+	.front-thumb {
+		float: left;
+		margin: -4rem 1rem 1rem 0;
+	}
+
+	.home.page .site-content > header {
+		position: relative;
+		margin-left: 18.75rem;
+	}
+}
+
+@media (min-width: 979px) and (max-width: 1199px) {
+	.front-thumb {
+		margin: 0 1rem 1rem 0;
+	}
+
+	.home.page .site-content > header {
+		margin-left: 0;
+		width: 95%;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) 
+and (max-width: 979px) 
+{ 
+	#phonenav #navigation ul {
+		width: auto;
+	}
+	#phonenav #navigation ul li {
+		background: none;
+		border-bottom: none;
+		display: block;
+		width: auto;
+	}
+	.home.page .site-content > header {
+		position: relative;
+		margin-left: 0;
+		width: 95%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	.home.page .site-content > header {
+		position: relative;
+		margin-left: 0;
+		width: 95%;
+	}
+
+	.nav-collapse .dropdown-menu {
+		background-color: #fff;
+	}
+	.fc-event-title {
+		display: none;
+	}
+	
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+.site-content {
+padding-right: 1rem;
+}
+
+	.widget > div {
+		padding-left: .5rem;
+	}
+
+	.EO_Event_List_Widget {
+		padding: 0 .5rem;
+	}
+	 }
+>>>>>>> 8f03c5cffd16713af6ff4cb0e7ea2034f164b7a2
