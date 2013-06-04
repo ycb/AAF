@@ -189,6 +189,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 .donate-ad {
     background: #000;
     font-family: UniversLight Arial,Helvetica,sans-serif;
@@ -208,6 +209,116 @@ body {
     margin: 0 auto;
     padding: 12px;
 }
+
+	.sidebarmobile ul li {
+		background: #000;
+		font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
+		font-size: 1.3rem;
+		font-weight: lighter;
+		letter-spacing: .08rem;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 1rem 0rem;
+	}
+
+		.sidebarmobile ul li a{
+			color: #fff;
+		}
+
+		.sidebarmobile ul li small {
+			font-size: .7rem;
+			color: #fff;
+			line-height: 0;
+		}
+		.sidebarmobile .widget {
+			margin-bottom: 0;
+		}
+
+
+.sidebar-image {
+	margin:  .1rem .1rem 0 0;
+}
+
+.widget .widget-title {
+	font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	letter-spacing: .08rem;
+	text-transform: uppercase;
+	background: #333;
+	padding: 0 1rem;
+	color: #fff;
+}
+
+.widget .widget-title:first-child {
+	margin-top: 0;
+}
+
+	.widget > div {
+		padding-right: .5rem;
+	}
+
+	.widget .nav-tabs {
+		border-bottom: none;
+	}
+
+	.widget .nav li {
+		clear: none;
+		border-bottom: none;
+	}
+
+	#afffacts li {
+		background: #ccc;
+		width: 32%;
+		margin-left: 1%;
+		height: .1rem;
+	}
+
+		#afffacts li:first-child {
+			margin-left: 0;
+		}
+
+		#afffacts li.active {
+			background: #BE2025;
+		}
+
+		#afffacts li a,
+		#afffacts li a:hover,
+		#afffacts li a:focus {
+			background: none;
+			border: none;
+			width: 100%;
+			height: 100%;
+		}
+
+	.donate-ad {
+		background: #000;
+		font-family: 'UniversLight' Arial, Helvetica, sans-serif;
+		color: #fff;
+		padding: 0 0 1rem 1rem;
+		text-align: center;
+	}
+
+	.donate-ad h3 {
+		color: #fff;
+		margin-bottom: 0;
+		font-size: 1.5rem;
+	}
+
+	.donate-ad p {
+		margin: 0 1rem 1rem 0;
+	}
+
+	.donate-ad .btn-block {
+		width: 75%;
+		margin: 0 auto;
+		font-size: 1.25rem;
+		padding: 12px; 
+	}
+
+	code {
+		white-space: normal;
+	}
+
 .site-footer {
     height: 15.5rem;
     background: #000;
