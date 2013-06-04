@@ -5,7 +5,7 @@ require_once dirname( __FILE__ ) . '/class.settings-api.php';
 /**
  * WordPress settings API demo class
  *
- * @author Tareq Hasan
+ * @author Dario Novoa
  */
 class Tareqs_Planet_Admin {
 

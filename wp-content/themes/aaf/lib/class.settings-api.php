@@ -3,8 +3,8 @@
 /**
  * AAF Settings API wrapper class
  *
- * @author Tareq Hasan <tareq@AAF.com>
- * @link http://tareq.AAF.com Tareq's Planet
+ * @author Dario Novoa <darionovoa@ideartte.info>
+ * @link http://darionovoa.info
  * @example settings-api.php How to use the class
  */
 if ( !class_exists( 'AAF_Settings_API' ) ):
