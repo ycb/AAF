@@ -606,6 +606,7 @@ input[type="color"].uneditable-input,
 	}
 
 /*Media queries*/
+
 /*Larger modern laptops and desktops*/
 @media (min-width: 1200px) {
 	.site-title {
@@ -754,8 +755,7 @@ input[type="color"].uneditable-input,
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) 
-and (max-width: 979px) 
+@media (min-width: 768px) and (max-width: 979px) {
 { 
 	#phonenav #navigation ul {
 		width: auto;
@@ -804,5 +804,4 @@ padding-right: 1rem;
 	.EO_Event_List_Widget {
 		padding: 0 .5rem;
 	}
-	 }
->>>>>>> 8f03c5cffd16713af6ff4cb0e7ea2034f164b7a2
+}
