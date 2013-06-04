@@ -13,31 +13,35 @@
 </div><!-- #main .site-main -->
 
 <footer id="colophon" class="site-footer container" role="contentinfo">
-    <div class="row">
- 
-        <div class="span12">    
-            <div class="span8">
-                <a href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Omega+Boys+Club,+1060+Tennessee+Street,+San+Francisco,+CA&aq=0&oq=ome&sll=37.269174,-119.306607&sspn=12.3355,20.061035&ie=UTF8&hq=Omega+Boys+Club,+1060+Tennessee+Street,+San+Francisco,+CA&hnear=&radius=15000&ll=37.758517,-122.389434&spn=0.095815,0.130291&t=m&z=13&iwloc=A&cid=6160364427089974319"><img class="pull-left map" src="<?php bloginfo('stylesheet_directory'); ?>/images/map.png"></a>
-                <h3>Alive & Free is located in San Francisco</h3> in the Dog Patch neighborhood<br /> near 22nd St, near one block above 3rd St. 
-                <br>1060 Tennessee st, San Francisco, CA 
-                <br>(415) 826-8674 (415) 826-8674
-            </div>
-
-            <div class="span3 footer-right-block">
+        <div class="row">
+            <div class="span12">    
+                <div class="span8">
+                    <a href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Omega+Boys+Club,+1060+Tennessee+Street,+San+Francisco,+CA&aq=0&oq=ome&sll=37.269174,-119.306607&sspn=12.3355,20.061035&ie=UTF8&hq=Omega+Boys+Club,+1060+Tennessee+Street,+San+Francisco,+CA&hnear=&radius=15000&ll=37.758517,-122.389434&spn=0.095815,0.130291&t=m&z=13&iwloc=A&cid=6160364427089974319"><img class="pull-left map" src="<?php bloginfo('stylesheet_directory'); ?>/images/map.png"></a>
+                    <h3>Alive &amp; Free is located in San Francisco</h3> in the Dog Patch neighborhood<br /> near 22nd St, near one block above 3rd St. 
+                    <br>1060 Tennessee st, San Francisco, CA 
+                    <br>(415) 826-8674 (415) 826-8674
+                </div>
             
-            </div>
+            <span class="span4 pull-right noleftmargin">
+                    <ul class="socialbtns">
+                        <li class="facebook"><a href="#"></a></li>
+                        <li class="twitter"><a href="#"></a></li>
+                        <li class="instagram"><a href="#"></a></li>
+                    </ul>
+                    <?php get_search_form(); ?>
+                </span>
 
-    <nav class="span6 pull-right">
+                <nav class="span6 pull-right">
 
-        <?php wp_nav_menu( array('theme_location' => 'footer', 'container_id' => 'footer-navigation', 'container_class' => 'nav footer-menu') ); ?>
+                    <?php wp_nav_menu( array('theme_location' => 'footer', 'container_id' => 'footer-navigation', 'container_class' => 'nav footer-menu') ); ?>
 
-    </nav>
+                </nav>
 
-    <nav class="span4 pull-left">
+                <nav class="span4 pull-left">
 
-        <?php wp_nav_menu( array('theme_location' => 'sub-footer', 'link_after' => '<span class="sep"> |</span>', 'container_id' => 'sub-footer-navigation', 'container_class' => 'nav sub-footer-menu') ); ?>
-               
-    </nav>
+                    <?php wp_nav_menu( array('theme_location' => 'sub-footer', 'link_after' => '<span class="sep"> |</span>', 'container_id' => 'sub-footer-navigation', 'container_class' => 'nav sub-footer-menu') ); ?>
+                           
+                </nav>
 
                 <div class="site-info span12">
 
