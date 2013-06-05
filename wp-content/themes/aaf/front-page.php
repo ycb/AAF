@@ -56,10 +56,10 @@ get_header();
                   <h4><?php echo get_the_title( $query->post->ID ) ?></h4>
                   <p><?php 
                   	if( $post_meta_data['slide_url'][0] ) {
-                  		$readmorelink = '<a href="'. $post_meta_data['slide_url'][0] .'">Read More...</a>';
+                  		$readmorelink = '<a href="'. $post_meta_data['slide_url'][0] .'" class="caro-readmore">Read More...</a>';
                   	} else {
                   		$postpermalink = get_permalink( $post_meta_data['slide_post_list'][0] );
-                  		$readmorelink = '<a href="'. $postpermalink .'">Read More...</a>';
+                  		$readmorelink = '<a href="'. $postpermalink .'" class="caro-readmore">Read More...</a>';
                   	}
                   	echo wp_trim_words( $post_meta_data['slide_carousel_text'][0], $num_words = 22 ) . "&nbsp;" . $readmorelink;
                   	?>

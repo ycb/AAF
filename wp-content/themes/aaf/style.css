@@ -174,7 +174,7 @@ html, body {
 .ribbon {
     width: 149px;
     height: 149px;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     background: url(images/ribbon.png) 0 0 no-repeat;
