@@ -43,12 +43,13 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <div class="ribbon hidden-phone"><a href=""><span>Our New Website</span></a></div>
     <div class="container navbar-static-top utilitynav visible-desktop">
         <div class="span6 newsletter">Follow us as we grow&nbsp;&nbsp;<input type="text" id="appendedInputButton" class="span2" placeholder="ENTER YOUR EMAIL"><input type="submit" class="submit btn" name="submit" id="searchsubmit" value="GO"></div><div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate Now</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/?cat=13">Latest News</a></div>
     </div>
     <div id="page" class="hfeed site">
         <?php do_action( 'before' ); ?>
-        <div id="phonenav" class="navbar hidden-desktop">
+        <div id="phonenav" class="navbar visible-phone">
           <div class="navbar-inner">
             <div class="container">
          
@@ -71,20 +72,9 @@
          
             </div>
           </div>
-        </div>
-        <header class="hidden-desktop">
-            <div class="row-fluid">
-                <div class="span12 socialbtns-container">
-                    <ul class="socialbtns">
-                        <li class="facebook"><a href="#"></a></li>
-                        <li class="twitter"><a href="#"></a></li>
-                        <li class="instagram"><a href="#"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
+        </div><!--  end phone menu -->
 
-        <header id="masthead" class="site-header visible-desktop" role="banner">
+        <header id="masthead" class="site-header hidden-phone" role="banner">
             <div class="container">
                 <div class="row-fluid">
                     <div class="span12">
@@ -112,6 +102,18 @@
                 </div><!-- .container -->
             </div> <!-- .menu-container -->
         </header><!-- #masthead .site-header -->
+
+        <header class="hidden-desktop">
+            <div class="row-fluid">
+                <div class="span12 socialbtns-container">
+                    <ul class="socialbtns">
+                        <li class="facebook"><a href="#"></a></li>
+                        <li class="twitter"><a href="#"></a></li>
+                        <li class="instagram"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
 
         <div id="main" class="site-main">
             <div class="container content-wrap">

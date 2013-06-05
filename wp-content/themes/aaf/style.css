@@ -171,6 +171,19 @@ html, body {
     height: 100%;
 }
 
+.ribbon {
+    width: 149px;
+    height: 149px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: url(images/ribbon.png) 0 0 no-repeat;
+}
+
+    .ribbon span {
+        visibility: hidden;
+    }
+
 .page {
     min-height: 100%;
     height: auto !important;
@@ -636,16 +649,24 @@ img.map {
 /* Portrait tablet to landscape and desktop */
 
 @media (min-width: 768px) and (max-width: 979px) { 
+    
+    .site-header .site-navigation {
+        height: 28px;
+    }
 
-    #phonenav #navigation ul {
-        width: auto;
+    .site-header #navigation li a {
+        font-size: .7rem;
     }
-    #phonenav #navigation ul li {
-        background: none;
-        border-bottom: none;
-        display: block;
-        width: auto;
+
+    .site-header #navigation .caret {
+        margin-top: 4px;
     }
+
+    .corner-left:before,
+    .corner-right:after {
+        height: 28px;
+    }
+
     .home.page .site-content > header {
         position: relative;
         margin-left: 0;
@@ -654,6 +675,14 @@ img.map {
 
     .home.page .entry-content {
         padding-left: 0;
+    }
+
+    .content-area.span8 {
+        width: 100%;
+    }
+
+    .widget > div {
+        padding-right: 0;
     }
 
      .site-footer {

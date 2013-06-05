@@ -127,6 +127,6 @@ get_header();
     </div><!-- #content .site-content -->
 </div><!-- #primary .content-area -->
 
-<div class="hidden-desktop sidebarmobile span4"><?php get_sidebar('mobile'); ?></div>
+<div class="hidden-desktop sidebarmobile"><?php get_sidebar('mobile'); ?></div>
 <div class="visible-desktop sidebardesktop span4"><?php get_sidebar('desktop'); ?></div>
 <?php get_footer(); ?>
