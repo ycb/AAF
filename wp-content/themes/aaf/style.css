@@ -466,10 +466,6 @@ img.map {
 }
 
 /*front page only*/
-.home.page .entry-header {
-    display: none;
-}
-
 .home.page .sectiontitle {
     font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
     font-weight: lighter;
@@ -488,8 +484,13 @@ img.map {
         right: -10px;
     }
 
-    #comments {
-        display: none;
+    .home.page .entry-header .entry-title {
+        display: block;
+        font-size: 1.75rem;
+    }
+
+    .home.page .entry-content {
+        padding-left: 19.81rem;
     }
 
 /*Media queries*/
