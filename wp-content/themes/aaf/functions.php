@@ -195,11 +195,11 @@ include_once("inc/sliders_cpt.php");
 function aaf_breadcrumbs() {  
     /* === Args === */  
     $text['home']     = 'Home'; // text for the 'Home' link  
-    $text['category'] = _('Archive by Category "%s"', 'aaf'); // text for a category page  
-    $text['search']   = _('Search Results for "%s" Query', 'aaf'); // text for a search results page  
-    $text['tag']      = _('Posts Tagged "%s"', 'aaf'); // text for a tag page  
-    $text['author']   = _('Articles Posted by %s', 'aaf'); // text for an author page  
-    $text['404']      = _('Error 404', 'aaf'); // text for the 404 page  
+    $text['category'] = 'Archive by Category "%s"'; // text for a category page  
+    $text['search']   = 'Search Results for "%s" Query'; // text for a search results page  
+    $text['tag']      = 'Posts Tagged "%s"'; // text for a tag page  
+    $text['author']   = 'Articles Posted by %s'; // text for an author page  
+    $text['404']      = 'Error 404'; // text for the 404 page  
   
     $show_current   = 1; // 1 - show current post/page/category title in breadcrumbs, 0 - don't show  
     $show_on_home   = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show  
