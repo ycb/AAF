@@ -74,7 +74,7 @@
         </div>
         <header class="hidden-desktop">
             <div class="row-fluid">
-                <div class="span12">
+                <div class="span12 socialbtns-container">
                     <ul class="socialbtns">
                         <li class="facebook"><a href="#"></a></li>
                         <li class="twitter"><a href="#"></a></li>

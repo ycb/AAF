@@ -121,7 +121,7 @@ input[type="color"] .uneditable-input {
 }
 
 .socialbtns {
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 0 auto;
     width: 11rem;
     text-align: center;
 
@@ -678,7 +678,7 @@ and (max-width: 979px)
     .nav-collapse .dropdown-menu {
         background-color: #fff;
     }
-    .fc-event-title, .social-search, .map, ul#menu-sub-footer  {
+    .fc-event-title, .social-search, .map, ul#menu-sub-footer, .breadcrumbs-container {
         display: none;
     }
 
@@ -704,6 +704,12 @@ font-size: 1.0rem;
 padding-top: .4rem;
 }
 
+.socialbtns-container {
+border-bottom: 1px solid #d4d4d4;
+padding-bottom: .5rem;
+box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+}
+
 .site-content {
 padding-right: 1rem;
 }
@@ -716,7 +722,7 @@ padding-right: 1rem;
     padding: 0 .5rem;
 }
 
-.social-search, .map, ul#menu-sub-footer  {
+.social-search, .map, ul#menu-sub-footer, .breadcrumbs-container {
     display: none;
 }
 
