@@ -97,14 +97,14 @@ get_header();
 		</header>
 		<?php 	//latest upcoming events arguments
 			$argsupevents = array(
-				'post_type' => 'events',
-				'category_name' => 'featured',
-				'posts_per_page' => 1
+				'post_type'=>'event',
+					'event_start_after' => 'today',
+					'posts_per_page' => 1,
+					'group_events_by'=>'occurrence'//Don't group by series
 			);
 		
 			// The Query
 			$queryupevents = new WP_Query( $argsupevents );
-		
 			// The Loop
 			while ( $queryupevents->have_posts() ) :
 				$queryupevents->the_post();
