@@ -20,8 +20,10 @@
         	$content = get_the_content('');
         	echo wp_trim_words( $content, $num_words = 55, '' ) . '<br><br><br><a href="' . get_permalink() . '"><span class="meta-nav btn btn-danger pull-right">READ MORE</span></a>';
         ?>
-        <span class='st_facebook_hcount' displayText='Facebook'></span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class='st_twitter_hcount' displayText='Tweet'></span>
+        <div class="socialposticons">
+            <span class='st_facebook_hcount' displayText='Facebook'></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class='st_twitter_hcount' displayText='Tweet'></span>
+        </div>
         <?php wp_link_pages( array('before' => '<div class="page-links">' . __( 'Pages:', 'AAF' ), 'after' => '</div>') ); ?>
         <?php edit_post_link( __( 'Edit', 'AAF' ), '<span class="edit-link">', '</span>' ); ?>
     </div><!-- .entry-content -->
