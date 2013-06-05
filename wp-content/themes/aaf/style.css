@@ -246,7 +246,9 @@ html, body {
 .site-content {
     padding-left: 1rem;
 }
-
+.carousel-control {
+    z-index: 99;
+}
 .carousel-caption {
     font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
     font-weight: lighter;

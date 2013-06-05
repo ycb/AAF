@@ -194,7 +194,7 @@ include_once("inc/sliders_cpt.php");
 //our own breadcrumbs
 function aaf_breadcrumbs() {  
     /* === Args === */  
-    $text['home']     = _('Home', 'aaf'); // text for the 'Home' link  
+    $text['home']     = 'Home'; // text for the 'Home' link  
     $text['category'] = _('Archive by Category "%s"', 'aaf'); // text for a category page  
     $text['search']   = _('Search Results for "%s" Query', 'aaf'); // text for a search results page  
     $text['tag']      = _('Posts Tagged "%s"', 'aaf'); // text for a tag page  
