@@ -120,6 +120,12 @@ input[type="color"] .uneditable-input {
     padding-top: .5rem;
 }
 
+.socialbtns-container {
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: .5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+}
+
 .socialbtns {
     margin: 0 auto 0 auto;
     width: 11rem;
@@ -695,14 +701,8 @@ and (max-width: 979px)
         padding-top: .4rem;
     }
 
-    .socialbtns-container {
-        border-bottom: 1px solid #d4d4d4;
-        padding-bottom: .5rem;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.065);
-    }
-
     .site-content {
-        padding-right: 1rem;
+        padding: 1rem 0 1rem 0;
     }
 
     .widget > div {
