@@ -636,6 +636,7 @@ img.map {
 }
 
 @media (min-width: 979px) and (max-width: 1199px) {
+
     .front-thumb {
         margin: 0 1rem 1rem 0;
     }
@@ -654,8 +655,22 @@ img.map {
         height: 28px;
     }
 
+
     .site-header #navigation li a {
         font-size: .7rem;
+    }
+
+    .site-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding-top: 0rem;
+        text-align: right;
+        padding-right: 4rem;
+    }
+
+    .site-content {
+        padding-right: 1rem;
+        padding-top: 1rem;
     }
 
     .site-header #navigation .caret {
@@ -694,8 +709,16 @@ img.map {
 @media (max-width: 767px) { 
 
     .site-title {
-        font-size: 1.0rem;
-        padding-top: .4rem;
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        padding-top: 0.25rem;
+        text-align: right;
+        padding-right: 4rem;
+    }
+
+    .site-content {
+        padding-right: 1rem;
+        padding-top: 1rem;
     }
 
     .home.page .site-content > header {
@@ -737,9 +760,17 @@ img.map {
 /* Landscape phones and down */
 @media (max-width: 480px) { 
 
+    .navbar .brand {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin: 0 0 0 -19px;
+    }
     .site-title {
-        font-size: 1.0rem;
-        padding-top: .4rem;
+        font-size: 1rem;
+        padding-top: 1.4rem;
+        text-align: left;
+        padding-right: 0;
+        line-height: 1.5rem;
     }
 
     .site-content {
