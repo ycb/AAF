@@ -1,0 +1,184 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Restrict Widgets\n"
+"POT-Creation-Date: 2013-03-15 23:14+0100\n"
+"PO-Revision-Date: 2013-03-15 23:17+0100\n"
+"Last-Translator: Bartosz Arendt <info@digitalfactory.pl>\n"
+"Language-Team: dFactory <info@dfactory.eu>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../restrict-widgets.php:194
+msgid "Pages"
+msgstr "Strony"
+
+#: ../restrict-widgets.php:195
+msgid "Custom Post Types"
+msgstr "Własne typy wpisów"
+
+#: ../restrict-widgets.php:196
+msgid "Custom Post Type Archives"
+msgstr "Archiwa własnych typów wpisów"
+
+#: ../restrict-widgets.php:197
+msgid "Categories"
+msgstr "Kategorie"
+
+#: ../restrict-widgets.php:198
+msgid "Taxonomies"
+msgstr "Taksonomie"
+
+#: ../restrict-widgets.php:199
+msgid "Others"
+msgstr "Inne"
+
+#: ../restrict-widgets.php:200
+msgid "Users"
+msgstr "Użytkownicy"
+
+#: ../restrict-widgets.php:201
+msgid "Languages"
+msgstr "Języki"
+
+#: ../restrict-widgets.php:205
+msgid "Front Page"
+msgstr "Strona główna"
+
+#: ../restrict-widgets.php:206
+msgid "Blog Page"
+msgstr "Strona z wpisami"
+
+#: ../restrict-widgets.php:207
+msgid "Single Posts"
+msgstr "Pojedyncze wpisy"
+
+#: ../restrict-widgets.php:208
+msgid "Sticky Posts"
+msgstr "Wpisy przyklejone"
+
+#: ../restrict-widgets.php:209
+msgid "Author Archive"
+msgstr "Archiwum autora"
+
+#: ../restrict-widgets.php:210
+msgid "Date Archive"
+msgstr "Archiwum daty"
+
+#: ../restrict-widgets.php:211
+msgid "404 Page"
+msgstr "Strona błędów 404"
+
+#: ../restrict-widgets.php:212
+msgid "Search Page"
+msgstr "Strona wyszukiwania"
+
+#: ../restrict-widgets.php:216
+msgid "Logged in users"
+msgstr "Zalogowani użytkownicy"
+
+#: ../restrict-widgets.php:217
+msgid "Logged out users"
+msgstr "Wylogowani użytkownicy"
+
+#: ../restrict-widgets.php:447
+msgid "Restrict widgets"
+msgstr "Ograniczenia widgetów"
+
+#: ../restrict-widgets.php:451
+msgid ""
+"Use this settings to manage access to widgets page and to restrict "
+"availability of certain widgets, sidebars and widgets options to site "
+"administrators only."
+msgstr ""
+"Użyj tych ustawień aby określić kto może mieć dostęp do widgetów, jakie "
+"widgety, panele boczne i ustawienia widgetów są dostępne dla użytkowników a "
+"jakie tylko dla administratorów."
+
+#: ../restrict-widgets.php:454
+msgid "Restrict Users"
+msgstr "Ograniczenia użytkowników"
+
+#: ../restrict-widgets.php:464
+msgid "Select user roles restricted to manage widgets."
+msgstr "Wybierz role użytkowników, którzy mogą zarządzać widgetami."
+
+#: ../restrict-widgets.php:468
+msgid "Restrict Sidebars"
+msgstr "Ograniczenia paneli bocznych"
+
+#: ../restrict-widgets.php:483
+msgid "Select which sidebars will be restricted to admins only."
+msgstr "Wybierz panele boczne, które będą dostępne tylko dla administratorów."
+
+#: ../restrict-widgets.php:487
+msgid "Restrict Widgets"
+msgstr "Ograniczenia widgetów"
+
+#: ../restrict-widgets.php:499
+msgid "Select which widgets will be restricted to admins only."
+msgstr "Wybierz widgety, któe będą dostępne tylko dla administratorów."
+
+#: ../restrict-widgets.php:503
+msgid "Restrict Widget Options"
+msgstr "Ograniczenia opcji widgetów"
+
+#: ../restrict-widgets.php:513
+msgid "Select which widget options will be restricted to admins only."
+msgstr "Wybierz które opcje widgetów, będą dostępne tylko dla administratorów."
+
+#: ../restrict-widgets.php:517
+msgid "Restrict Option Groups"
+msgstr "Ograniczenia grup opcji"
+
+#: ../restrict-widgets.php:520
+msgid "Display widget options in groups"
+msgstr "Wyświetl opcje widgetów w grupach"
+
+#: ../restrict-widgets.php:524
+msgid "Plugin Deactivation"
+msgstr "Deaktywacja wtyczki"
+
+#: ../restrict-widgets.php:527
+msgid "Remove all plugin data on deactivation"
+msgstr "Usuń wszystkie dane wtyczki podczas deaktywacji"
+
+#: ../restrict-widgets.php:531
+msgid "Save settings"
+msgstr "Zapisz ustawienia"
+
+#: ../restrict-widgets.php:532
+msgid "Created by"
+msgstr "Stworzone przez"
+
+#: ../restrict-widgets.php:692 ../restrict-widgets.php:702
+#, php-format
+msgid "Single %s"
+msgstr "Pojedyncze %s"
+
+#: ../restrict-widgets.php:732 ../restrict-widgets.php:742
+#, php-format
+msgid "%s Archive"
+msgstr "Archiwum %s"
+
+#: ../restrict-widgets.php:970
+msgid "Display / Hide Widget"
+msgstr "Wyświetl / Ukryj widget"
+
+#: ../restrict-widgets.php:972
+msgid "Display widget on selected"
+msgstr "Wyświetl widget na wybranych stronach"
+
+#: ../restrict-widgets.php:973
+msgid "Hide widget on selected"
+msgstr "Ukryj widget na wybranych stronach"
+
+#: ../restrict-widgets.php:1259 ../restrict-widgets.php:1304
+msgid "Widgets"
+msgstr "Widgety"

@@ -1,0 +1,101 @@
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close {
+    background: url("../images/chosen-sprite.png") no-repeat scroll -42px 1px transparent !important;
+	outline: none;
+}
+.restrict-widgets .restrict-widgets-select, .restrict-widgets .restrict-widgets-hide {
+	width:100%;
+}
+.widget .widget-inside p.restrict-widgets-display-label { margin-bottom:3px; }
+.restrict-widgets-select-div { clear:both; }
+.restrict-widgets-hide-div { clear:both; margin-bottom:3px; }
+.restrict-widgets .chzn-container { min-width:100%; }
+.restrict-widgets .chzn-container-multi .chzn-choices {
+	-webkit-border-radius: 3px;
+	-moz-border-radius   : 3px;
+	border-radius        : 3px;
+}
+.restrict-widgets .chzn-container-multi .chzn-choices .search-field input { height:24px; }
+.restrict-widgets .chzn-choices { border:1px solid #dfdfdf; padding: 0 5px 0 2px; min-height:26px; }
+.restrict-widgets .chzn-container-active .chzn-choices { border:1px solid #aaa; -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
+.restrict-widgets .chzn-drop { min-width: 100%;}
+.restrict-widgets .chzn-container-multi .chzn-choices { background:#fff; }
+.restrict-widgets .chzn-container-multi .chzn-choices .search-choice { 
+	background: -moz-linear-gradient(top, #f9f9f9 0%, #ececec 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#ececec)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f9f9f9 0%,#ececec 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f9f9f9 0%,#ececec 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #f9f9f9 0%,#ececec 100%); /* IE10+ */
+	background: linear-gradient(top, #f9f9f9 0%,#ececec 100%); /* W3C */
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+	text-shadow: 0 1px 0 #fff;
+	border: 1px solid #bbb;
+	font-size:12px;
+	font-weight: normal;
+	color: #333333;
+	height: 18px;
+    line-height: 18px;
+    padding: 0 20px 0 8px;
+}
+.restrict-widgets .chzn-container-single .chzn-single div b {
+    background: url("../images/chosen-sprite.png") no-repeat scroll 0 2px transparent;
+}
+.restrict-widgets .chzn-container-multi .chzn-choices .search-choice.search-choice-disabled {
+	padding: 0 8px;
+}
+.restrict-widgets .chzn-single {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #dfdfdf;
+	background: #fff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	cursor: default;
+	outline: none;
+}
+.restrict-widgets .chzn-container-active .chzn-single { border:1px solid #aaa; -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
+
+#options_available_widgets_chzn, #options_widgets_selection_chzn, #options_widgets_sidebars_chzn {
+	margin: 0 20px 0 0;
+}
+#widgets-options input[type="text"] {
+	line-height:20px;
+}
+#widgets-options select {
+	width: 100%;
+}
+#widgets-options {
+	margin-left: 5px;
+	margin-right: 340px;
+}
+#widgets-left #widgets-options {
+	margin-left: 0;
+	margin-right: 0;
+	padding-top:20px; 
+}
+#widgets-options .widget-holder {
+	border-width: 0 1px 1px;
+	border-style: none solid solid;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	background-color: #FCFCFC;
+	border-color: #DFDFDF;
+	padding: 10px;
+}
+.widget-liquid-right .widget, .inactive-sidebar .widget, .widget-liquid-right .sidebar-description {
+    overflow: visible !important;
+}
+#widgets-options table { width:100%; }
+#widgets-options td.label { width:30%; vertical-align:top; line-height:12px; }
+#widgets-options td.label label { padding-top:12px; font-weight:bold; color:#222; }
+#widgets-options #save-widgets-options { margin: 20px 0 0 0; }
+
+#df-credits { float:right; font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif; font-style:italic; margin:15px 0 0; display:block; }
+#df-credits a { padding: 5px 0 0 7px; vertical-align:middle; }
+
+.widgets-holder-wrap .widgets-sortables { min-height:0!important; height:auto!important; }
