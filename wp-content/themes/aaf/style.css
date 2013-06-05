@@ -659,6 +659,10 @@ and (max-width: 979px)
         margin-left: 0;
         width: 95%;
     }
+
+    .home.page .entry-content {
+        padding-left: 0;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -674,6 +678,10 @@ and (max-width: 979px)
         margin-left: 0;
         width: 95%;
     }
+    
+    .home.page .entry-content {
+        padding-left: 0;
+    }
 
     .nav-collapse .dropdown-menu {
         background-color: #fff;
@@ -683,60 +691,60 @@ and (max-width: 979px)
     }
 
     .site-footer nav {
-margin-top: 0rem;
-}
+        margin-top: 0rem;
+    }
 
-.site-footer nav .footer-menu ul, .site-info, .credits {
-    margin: 0 auto;
-    text-align: center;
-}
-.site-footer {
-height: 8.5rem;
-}
+    .site-footer nav .footer-menu ul, .site-info, .credits {
+        margin: 0 auto;
+       text-align: center;
+    }
+    .site-footer {
+        height: 8.5rem;
+    }
 
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) { 
 
-.site-title {
-font-size: 1.0rem;
-padding-top: .4rem;
-}
+    .site-title {
+        font-size: 1.0rem;
+        padding-top: .4rem;
+    }
 
-.socialbtns-container {
-border-bottom: 1px solid #d4d4d4;
-padding-bottom: .5rem;
-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
-}
+    .socialbtns-container {
+        border-bottom: 1px solid #d4d4d4;
+        padding-bottom: .5rem;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+    }
 
-.site-content {
-padding-right: 1rem;
-}
+    .site-content {
+        padding-right: 1rem;
+    }
 
-.widget > div {
-    padding-left: .5rem;
-}
+    .widget > div {
+        padding-left: .5rem;
+    }
 
-.EO_Event_List_Widget {
-    padding: 0 .5rem;
-}
+    .EO_Event_List_Widget {
+        padding: 0 .5rem;
+    }
 
-.social-search, .map, ul#menu-sub-footer, .breadcrumbs-container {
-    display: none;
-}
+    .social-search, .map, ul#menu-sub-footer, .breadcrumbs-container {
+        display: none;
+    }
 
-.site-footer nav {
-margin-top: 0rem;
-}
+    .site-footer nav {
+        margin-top: 0rem;
+    }
 
-.site-footer nav .footer-menu ul, .site-info, .credits {
-    margin: 0 auto;
-    text-align: center;
-}
+    .site-footer nav .footer-menu ul, .site-info, .credits {
+        margin: 0 auto;
+        text-align: center;
+    }
 
-.site-footer {
-height: 8.5rem;
-}
+    .site-footer {
+        height: 8.5rem;
+    }
 
-     }
+}
