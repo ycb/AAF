@@ -61,7 +61,7 @@ get_header();
                   		$postpermalink = get_permalink( $post_meta_data['slide_post_list'][0] );
                   		$readmorelink = '<a href="'. $postpermalink .'">Read More...</a>';
                   	}
-                  	echo wp_trim_words( $post_meta_data['slide_carousel_text'][0], $num_words = 22, $readmorelink );
+                  	echo wp_trim_words( $post_meta_data['slide_carousel_text'][0], $num_words = 22 ) . "&nbsp;" . $readmorelink;
                   	?>
                   </p>
                 </div>
