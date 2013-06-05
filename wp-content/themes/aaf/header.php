@@ -115,7 +115,7 @@
 
         <div id="main" class="site-main">
             <div class="container content-wrap">
-                <div class="row-fluid">
+                <div class="row-fluid breadcrumbs-container">
                     <div class="span12"><?php if (function_exists('aaf_breadcrumbs')) aaf_breadcrumbs(); ?></div>
                 </div>
                 <div class="row-fluid">
