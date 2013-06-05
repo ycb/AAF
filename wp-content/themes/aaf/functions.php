@@ -53,7 +53,7 @@ class AAF {
         /**
          * Make theme available for translation
          * Translations can be filed in the /languages/ directory
-         * If you're building a theme based on Tareq\'s Planet - 2013, use a find and replace
+         * If you're building a theme based on _Bootstrap, use a find and replace
          * to change 'tp' to the name of your theme in all the template files
          */
         load_theme_textdomain( 'AAF', get_template_directory() . '/languages' );

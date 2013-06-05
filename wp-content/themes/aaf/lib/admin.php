@@ -7,7 +7,7 @@ require_once dirname( __FILE__ ) . '/class.settings-api.php';
  *
  * @author Dario Novoa
  */
-class Tareqs_Planet_Admin {
+class _Bootstrap_Admin {
 
     private $settings_api;
 
@@ -84,4 +84,4 @@ class Tareqs_Planet_Admin {
 
 }
 
-$settings = new Tareqs_Planet_Admin();
+$settings = new _Bootstrap_Admin();

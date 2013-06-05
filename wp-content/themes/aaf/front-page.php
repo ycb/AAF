@@ -98,9 +98,9 @@ get_header();
 		<?php 	//latest upcoming events arguments
 			$argsupevents = array(
 				'post_type'=>'event',
-					'event_start_after' => 'today',
-					'posts_per_page' => 1,
-					'group_events_by'=>'occurrence'//Don't group by series
+				'event_start_after' => 'today',
+				'posts_per_page' => 1,
+				'group_events_by'=>'occurrence'//Don't group by series
 			);
 		
 			// The Query
