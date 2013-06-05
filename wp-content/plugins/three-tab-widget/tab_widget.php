@@ -51,7 +51,7 @@ class AAF_Impact extends WP_Widget {
 		  <div class="tab-pane active" id="fact1"><?php echo $fact1; ?></div>
 		  <div class="tab-pane" id="fact2"><?php echo $fact2; ?></div>
 		  <div class="tab-pane" id="fact3"><?php echo $fact3; ?></div>
-		</div>
+		
 
 		<ul class="nav nav-tabs" id="afffacts">
 		  <li class="active"><a href="#fact1">&nbsp;</a></li>
@@ -60,6 +60,8 @@ class AAF_Impact extends WP_Widget {
 		</ul>
 
 		<a href="<?php echo $morelink; ?>" class="btn btn-danger btn-block">Learn More</a>
+
+		</div>
 		 
 		<script>
 		  jQuery(function () {

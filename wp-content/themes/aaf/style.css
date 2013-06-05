@@ -492,8 +492,18 @@ img.map {
     display: block;
     font-size: 1.75rem;
     font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    letter-spacing: .08rem;
+    background: #333;
+    padding: 0 1rem;
+    color: #fff;
 }
 
+h1.sectiontitle {
+    font-family: 'UniversLight', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+
+}
 .home.page .entry-content {
     padding-left: 19.81rem;
 }
