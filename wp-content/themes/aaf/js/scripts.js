@@ -3,7 +3,7 @@
         //comment submit button
         $('#respond').find('input[type=submit]').addClass('btn theme-btn');
 
-        $("a[rel^='prettyPhoto'], a.thickbox").prettyPhoto({
+        $("a[rel^='prettyPhoto'], a.thickbox, .gallery-item a").prettyPhoto({
             social_tools: false
         });
 

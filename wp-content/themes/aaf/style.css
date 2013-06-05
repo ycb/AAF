@@ -331,20 +331,21 @@ html, body {
         clear: none;
         border-bottom: none;
     }
-
+    
     #afffacts li {
-        background: #ccc;
-        width: 32%;
+        border: 1px solid #ccc;
+        width: 1.2rem;
         margin-left: 1%;
-        height: .1rem;
+        border-radius: 4rem;
+        height: .6rem;
     }
 
         #afffacts li:first-child {
-            margin-left: 0;
+            margin-left: 40%;
         }
 
         #afffacts li.active {
-            background: #BE2025;
+            background: #333;
         }
 
         #afffacts li a,
