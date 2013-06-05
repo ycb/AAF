@@ -193,7 +193,7 @@ include_once("inc/sliders_cpt.php");
 
 //our own breadcrumbs
 function aaf_breadcrumbs() {  
-    /* === OPTIONS === */  
+    /* === Args === */  
     $text['home']     = _('Home', 'aaf'); // text for the 'Home' link  
     $text['category'] = _('Archive by Category "%s"', 'aaf'); // text for a category page  
     $text['search']   = _('Search Results for "%s" Query', 'aaf'); // text for a search results page  
@@ -208,7 +208,7 @@ function aaf_breadcrumbs() {
     $delimiter      = ' <span class="divider">/</span> '; // delimiter between crumbs  
     $before         = '<span class="active">'; // tag before the active crumb  
     $after          = '</span>'; // tag after the active crumb  
-    /* === END OF OPTIONS === */  
+    /* === END OF ARGS === */  
   
     global $post;  
     $home_link    = home_url('/');  
