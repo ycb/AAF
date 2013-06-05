@@ -673,7 +673,7 @@ h1.sectiontitle {
     .site-title {
         font-size: 2rem;
         line-height: 2.5rem;
-        padding-top: 0rem;
+        padding-top: 1rem;
         text-align: right;
         padding-right: 4rem;
     }
