@@ -310,6 +310,13 @@ html, body {
         padding-right: .5rem;
     }
 
+    aside#text-13 .textwidget  {
+        border: 1px solid #333;
+        padding: .5rem;
+        margin-right: .4rem;
+        background: #f5f5f5;
+    }
+
     .widget .nav-tabs {
         border-bottom: none;
     }
@@ -395,6 +402,7 @@ font-size: 1.25em;
 
     .site-footer .socialbtns li {
         margin-right: 2rem;
+        margin-bottom: 20px;
     }
 
 .site-footer input.field {
@@ -410,6 +418,10 @@ font-size: 1.25em;
 
 img.map {
     margin-right: 1em;
+}
+
+.site-footer #searchform {
+    margin-top: 20px;
 }
 
 .site-footer nav {
@@ -659,9 +671,21 @@ and (max-width: 979px)
     .nav-collapse .dropdown-menu {
         background-color: #fff;
     }
-    .fc-event-title {
+    .fc-event-title, .social-search, .map, ul#menu-sub-footer  {
         display: none;
     }
+
+    .site-footer nav {
+margin-top: 0rem;
+}
+
+.site-footer nav .footer-menu ul, .site-info, .credits {
+    margin: 0 auto;
+    text-align: center;
+}
+.site-footer {
+height: 8.5rem;
+}
 
 }
 
@@ -679,4 +703,22 @@ padding-right: 1rem;
     .EO_Event_List_Widget {
         padding: 0 .5rem;
     }
+
+    .social-search, .map, ul#menu-sub-footer  {
+        display: none;
+    }
+
+.site-footer nav {
+margin-top: 0rem;
+}
+
+.site-footer nav .footer-menu ul, .site-info, .credits {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-footer {
+height: 8.5rem;
+}
+
      }
