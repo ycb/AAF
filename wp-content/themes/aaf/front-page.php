@@ -26,12 +26,14 @@ get_header();
 			$query = new WP_Query( $args );
 
 			// The Loop
+			$i = 1;
 			while ( $query->have_posts() ) :
 				$query->the_post();
 
 			?>
-		    <li data-target="#myCarousel" data-slide-to="1"></li>
+		    <li data-target="#myCarousel" data-slide-to="<?php echo $i ?>"></li>
 		    <?php
+		    $i ++;
 		    endwhile;
 		    ?>
 		  </ol>
@@ -40,11 +42,12 @@ get_header();
         <?php
 
 			// The Loop
+        	$i = 1;
 			while ( $query->have_posts() ) :
 				$query->the_post();
 				$post_meta_data = get_post_custom($query->post->ID);
 		?>
-			<div class="item <?php echo ($query->found_posts <= 1 ? 'active' : 'not') ?>">
+			<div class="item <?php echo ($i == 1 ? 'active' : 'not') ?>">
 				<?php 	
 					$custom_image = $post_meta_data['slide_storyimage'][0];  
 					echo wp_get_attachment_image($custom_image, 'full');  
@@ -65,6 +68,7 @@ get_header();
 			</div>
 
 		<?php
+			$i ++;
 			endwhile;
 		?>
 		  </div>

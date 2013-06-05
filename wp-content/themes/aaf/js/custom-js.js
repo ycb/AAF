@@ -17,7 +17,7 @@ jQuery(function(jQuery) {
 	
 	jQuery('.custom_upload_image_button').click(function() {
 		formfield = jQuery(this).siblings('.custom_upload_image');
-		preview = jQuery(this).siblings('.custom_preview_image');
+		preview = jQuery(this).siblings('.custom_pslide_image');
 		tb_show('', 'media-upload.php?type=image&TB_iframe=true');
 		window.send_to_editor = function(html) {
 			imgurl = jQuery('img',html).attr('src');
@@ -33,7 +33,7 @@ jQuery(function(jQuery) {
 	jQuery('.custom_clear_image_button').click(function() {
 		var defaultImage = jQuery(this).parent().siblings('.custom_default_image').text();
 		jQuery(this).parent().siblings('.custom_upload_image').val('');
-		jQuery(this).parent().siblings('.custom_preview_image').attr('src', defaultImage);
+		jQuery(this).parent().siblings('.custom_pslide_image').attr('src', defaultImage);
 		return false;
 	});
 	
