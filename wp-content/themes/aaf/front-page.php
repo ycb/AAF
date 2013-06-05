@@ -72,10 +72,7 @@ get_header();
 		  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 		</div>
-		
-		<header class="span7">
-			<h1 class="sectiontitle">Latest Update</h1>
-		</header>
+
 		<?php 	//latest updates arguments
 			$args = array(
 				'category_name' => 'news-updates',
@@ -90,12 +87,8 @@ get_header();
 				$querylatestupdates->the_post();
 				get_template_part( 'content', 'front-page' );
 			endwhile;
-		?>
 		
-		<header class="span7">
-			<h1 class="sectiontitle">Upcoming Events</h1>
-		</header>
-		<?php 	//latest upcoming events arguments
+			//latest upcoming events arguments
 			$argsupevents = array(
 				'post_type'=>'event',
 				'event_start_after' => 'today',
@@ -110,12 +103,8 @@ get_header();
 				$queryupevents->the_post();
 				get_template_part( 'content', 'front-page' );
 			endwhile;
-		?>
 		
-		<header class="span7">
-			<h1 class="sectiontitle">ALIVE &amp; FREE INFOGRAPHIC</h1>
-		</header>
-		<?php 	//latest featured arguments
+			//latest featured arguments
 			$argsfeatured = array(
 				'category_name' => 'featured',
 				'posts_per_page' => 1

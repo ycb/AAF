@@ -388,12 +388,11 @@ html, body {
 }
 
 .site-footer h3 {       
-color: #fff;
-margin: 0;
-text-transform: uppercase;
-letter-spacing: -1px;
-font-size: 1.25em;
-
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 1.25rem;
 }
 
 .site-footer .socialbtns {
@@ -466,32 +465,16 @@ img.map {
 }
 
 /*front page only*/
-.home.page .sectiontitle {
+
+.home.page .entry-header .entry-title {
+    display: block;
+    font-size: 1.75rem;
     font-family: 'VAGRoundedLight', Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    letter-spacing: .08rem;
-    text-transform: uppercase;
-    background: #333;
-    padding: 0 1rem;
-    color: #fff;
 }
-    .sectiontitle:after {
-        content: " ";
-        background: url('images/40px_right_corner_grey.png') 0 0 no-repeat;
-        height: 40px;
-        width: 10px;
-        position: absolute;
-        right: -10px;
-    }
 
-    .home.page .entry-header .entry-title {
-        display: block;
-        font-size: 1.75rem;
-    }
-
-    .home.page .entry-content {
-        padding-left: 19.81rem;
-    }
+.home.page .entry-content {
+    padding-left: 19.81rem;
+}
 
 /*Media queries*/
 /*Larger modern laptops and desktops*/
@@ -621,7 +604,7 @@ img.map {
     /*Front page only*/
     .front-thumb {
         float: left;
-        margin: -4rem 1rem 1rem 0;
+        margin: 0 1rem 1rem 0;
     }
 
     .home.page .site-content > header {
