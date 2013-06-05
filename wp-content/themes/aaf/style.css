@@ -662,6 +662,12 @@ and (max-width: 979px)
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
+
+    .site-title {
+        font-size: 1.0rem;
+        padding-top: .4rem;
+    }
+
     .home.page .site-content > header {
         position: relative;
         margin-left: 0;
@@ -692,21 +698,26 @@ height: 8.5rem;
 /* Landscape phones and down */
 @media (max-width: 480px) { 
 
+.site-title {
+font-size: 1.0rem;
+padding-top: .4rem;
+}
+
 .site-content {
 padding-right: 1rem;
 }
 
-    .widget > div {
-        padding-left: .5rem;
-    }
+.widget > div {
+    padding-left: .5rem;
+}
 
-    .EO_Event_List_Widget {
-        padding: 0 .5rem;
-    }
+.EO_Event_List_Widget {
+    padding: 0 .5rem;
+}
 
-    .social-search, .map, ul#menu-sub-footer  {
-        display: none;
-    }
+.social-search, .map, ul#menu-sub-footer  {
+    display: none;
+}
 
 .site-footer nav {
 margin-top: 0rem;
