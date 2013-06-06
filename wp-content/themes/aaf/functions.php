@@ -195,7 +195,7 @@ include_once("inc/sliders_cpt.php");
 function aaf_breadcrumbs() {  
     /* === Args === */  
     $text['home']     = 'Home'; // text for the 'Home' link  
-    $text['category'] = 'Archive by Category "%s"'; // text for a category page  
+    $text['category'] = '%s'; // text for a category page  
     $text['search']   = 'Search Results for "%s" Query'; // text for a search results page  
     $text['tag']      = 'Posts Tagged "%s"'; // text for a tag page  
     $text['author']   = 'Articles Posted by %s'; // text for an author page  
