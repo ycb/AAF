@@ -486,6 +486,22 @@ img.map {
     margin-left: 0;
 }
 
+/* fixes for Events plugin*/
+body.tax-event-category #primary {
+    width: 64.4%;
+    float: left;
+}
+
+ul.eo-event-meta li {
+    list-style: none;
+}
+
+
+time {
+    margin-top: 1rem;
+    display: block;
+}
+
 /*front page only*/
 
 .home.page .entry-header .entry-title {
