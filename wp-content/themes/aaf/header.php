@@ -43,9 +43,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div class="ribbon hidden-phone"><a href=""><span>Our New Website</span></a></div>
     <div class="container navbar-static-top utilitynav visible-desktop">
-        <div class="span6 newsletter">Follow us as we grow&nbsp;&nbsp;<input type="text" id="appendedInputButton" class="span2" placeholder="ENTER YOUR EMAIL"><input type="submit" class="submit btn" name="submit" id="searchsubmit" value="GO"></div><div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate Now</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/?cat=13">Latest News</a></div>
+        <div class="span6 newsletter">Join the Movement&nbsp;&nbsp;<input type="text" id="appendedInputButton" class="span2" placeholder="ENTER YOUR EMAIL"><input type="submit" class="submit btn" name="submit" id="searchsubmit" value="GO"></div><div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate Now</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/?cat=13">Latest News</a></div>
     </div>
     <div id="page" class="hfeed site">
         <?php do_action( 'before' ); ?>

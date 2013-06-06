@@ -171,19 +171,6 @@ html, body {
     height: 100%;
 }
 
-.ribbon {
-    width: 149px;
-    height: 149px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: url(images/ribbon.png) 0 0 no-repeat;
-}
-
-    .ribbon span {
-        visibility: hidden;
-    }
-
 .page {
     min-height: 100%;
     height: auto !important;
@@ -267,13 +254,34 @@ html, body {
     font-weight: lighter;
     letter-spacing: .08rem;
     color: #fff;
+    max-height: 60px;
+    overflow: hidden;
 }
+
 .carousel-caption h4 {
     font-size: 2rem;
     font-weight: lighter;
     letter-spacing: .1rem;
     text-transform: uppercase;
     color: #BE2025;
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: .5rem;
+}
+
+a.caro-readmore {
+    height: 20px;
+    width: 110px;
+    background: #ccc;
+    display: inline-block;
+    padding: 1rem;
+    float: right;
+    position: absolute;
+    right: 1rem;
+    top: .9rem;
+    padding-top: 1.5rem;
+    opacity: .85;
+    border: 2px solid;
 }
 
 .sidebarmobile {}
@@ -349,10 +357,10 @@ html, body {
     
     #afffacts li {
         border: 1px solid #ccc;
-        width: 1.2rem;
+        width: .8rem;
         margin-left: 1%;
         border-radius: 4rem;
-        height: .6rem;
+        height: .2rem;
     }
 
         #afffacts li:first-child {
@@ -361,6 +369,7 @@ html, body {
 
         #afffacts li.active {
             background: #333;
+            border: 1px solid #333;
         }
 
         #afffacts li a,
@@ -484,6 +493,10 @@ img.map {
 
 .site-info{
     margin-left: 0;
+}
+
+.tab-content .st_sharethis {
+    display: none;
 }
 
 /* fixes for Events plugin*/
@@ -798,6 +811,10 @@ h1.sectiontitle {
         padding-right: 0;
         line-height: 1.5rem;
     }
+
+a.caro-readmore {
+    display: none;
+} /* PS - temporary measure */
 
     .site-content {
         padding-right: 1rem;
