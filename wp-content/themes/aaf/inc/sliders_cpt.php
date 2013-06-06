@@ -52,8 +52,6 @@ function aaf_slides_edit_columns($slide_columns){
 		"cb" => "<input type=\"checkbox\" />",
 		"title" => _x('Title', 'column name'),
 		"slide_thumbnail" => __('Thumbnail', 'aaf' ),
-		"slide_category" => __('Category', 'aaf' ),
-		"slide_tag" => __('Tags', 'aaf' ),
 		"author" => __('Author', 'aaf' ),
 		"comments" => __('Comments', 'aaf' ),
 		"date" => __('Date', 'aaf' ),
@@ -80,26 +78,6 @@ function aaf_slides_columns_display($slide_columns, $post_id){
 			}
 			if ( isset($thumb) ) {
 				echo $thumb;
-			} else {
-				echo __('None', 'aaf' );
-			}
-		break;
-
-		// Display the slide tags in the column view
-		case "slide_category":
-
-			if ( $category_list = get_the_term_list( $post_id, 'slide_category', '', ', ', '' ) ) {
-				echo $category_list;
-			} else {
-				echo __('None', 'aaf' );
-			}
-		break;
-
-		// Display the slide tags in the column view
-		case "slide_tag":
-
-			if ( $tag_list = get_the_term_list( $post_id, 'post_tag', '', ', ', '' ) ) {
-				echo $tag_list;
 			} else {
 				echo __('None', 'aaf' );
 			}
@@ -221,16 +199,14 @@ function aaf_slides_settings_validate($input) {
 }
 
 //we need some custom scripts here.
-add_action( 'admin_print_scripts-post-new.php', 'aaf_slides_admin_script', 11 );
-add_action( 'admin_print_scripts-post.php', 'aaf_slides_admin_script', 11 );
-
 function aaf_slides_admin_script() {
     global $post_type;
     if( 'slide' == $post_type ) :
     	wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom-js.js' );
     endif;
 }
-
+add_action( 'admin_print_scripts-post-new.php', 'aaf_slides_admin_script', 11 );
+add_action( 'admin_print_scripts-post.php', 'aaf_slides_admin_script', 11 );
 
 //Now that we are done with the posttype itself let's move to the metabox
 
