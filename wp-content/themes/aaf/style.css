@@ -106,6 +106,10 @@ input[type="color"] .uneditable-input {
      background: #bcbdbf;
 }
 
+.pp_inline h2 {
+    margin-top: 0;
+}
+
 /*Mobile Menu Version styles*/
 #phonenav {}
 
