@@ -515,6 +515,13 @@ time {
     display: block;
 }
 
+
+/* 404 page */
+
+body.error404 .entry-content .row {
+    margin-left: 2rem;
+}
+
 /*front page only*/
 
 .home.page .entry-header .entry-title {
