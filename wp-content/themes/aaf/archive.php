@@ -83,5 +83,32 @@ get_header();
     </div><!-- #content .site-content -->
 </section><!-- #primary .content-area -->
 
-<?php get_sidebar(); ?>
+<!--dynamic sidebar for Blog, otherwise regular sidebar -->
+
+    <?php
+
+        if ( is_category( 'news-updates' ) ) {
+
+    ?>
+
+            <div id="secondary" class="span4" role="complementary">
+                <div class="widget-area">
+                    <?php do_action( 'before_sidebar' ); ?>
+
+    <?php
+
+            dynamic_sidebar( 'blog' ); 
+
+    ?>
+
+                </div>
+            </div><!-- #secondary .widget-area -->
+
+    <?php
+
+        } else {        
+            get_sidebar();
+        }
+    ?>
+
 <?php get_footer(); ?>

@@ -353,3 +353,6 @@ function nav_menu_first_last( $items ) {
  return $items;
 }
 add_filter( 'wp_nav_menu_items', 'nav_menu_first_last' );
+
+//sidebar shortcode
+add_filter('widget_text', 'do_shortcode');
