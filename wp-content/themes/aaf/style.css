@@ -104,6 +104,11 @@ input[type="color"] .uneditable-input {
 
 .site-content .btn {
      background: #bcbdbf;
+     color: #000;
+}
+
+.site-content .btn a:hover {
+     color: #fff;
 }
 
 .pp_inline h2 {
@@ -296,11 +301,12 @@ html, body {
     padding-bottom: .5rem;
 }
 
-a.caro-readmore {
+.site-content a.caro-readmore {
     background: #bcbdbf;
     position: absolute;
     right: 1rem;
     top: 2rem;
+    color: #fff;
 }
 
 .sidebarmobile {}
