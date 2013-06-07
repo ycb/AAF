@@ -18,7 +18,7 @@
     <div class="entry-content">
         <?php 
         	$content = get_the_content('');
-        	echo wp_trim_words( $content, $num_words = 55, '' ) . '<br><br><a href="' . get_permalink() . '"><span class="meta-nav btn btn-danger pull-right">READ MORE</span></a>';
+        	echo wp_trim_words( $content, $num_words = 55, '' ) . '<br><br><a href="' . get_permalink() . '"><span class="meta-nav btn pull-right">READ MORE</span></a>';
         ?>
         <div class="socialposticons visible-desktop">
             <span class='st_facebook_hcount' displayText='Facebook'></span>&nbsp;&nbsp;&nbsp;&nbsp;

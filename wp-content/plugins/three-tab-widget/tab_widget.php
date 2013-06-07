@@ -59,7 +59,7 @@ class AAF_Impact extends WP_Widget {
 		  <li><a href="#fact3">&nbsp;</a></li>
 		</ul>
 
-		<a href="<?php echo $morelink; ?>" class="btn btn-danger btn-block">Learn More</a>
+		<!--<a href="<?php echo $morelink; ?>" class="btn btn-block">Learn More</a>-->
 
 		</div>
 		 

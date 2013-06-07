@@ -82,10 +82,24 @@ input[type="color"] .uneditable-input {
 
 .btn {
     text-transform: uppercase;
+    background: #000;
+    background: #bcbdbf;
+    color: #fff;
+    box-shadow: none;
 }
+
+.btn:hover, .site-content .btn:hover, a.caro-readmore .btn:hover {
+    color: #fff;
+    background: #BE2025;
+}
+
 .btn-danger {
     background: #BE2025;
     background-image: none;
+}
+
+.site-content .btn {
+     background: #bcbdbf;
 }
 
 /*Mobile Menu Version styles*/
@@ -270,18 +284,10 @@ html, body {
 }
 
 a.caro-readmore {
-    height: 20px;
-    width: 110px;
-    background: #ccc;
-    display: inline-block;
-    padding: 1rem;
-    float: right;
+    background: #bcbdbf;
     position: absolute;
     right: 1rem;
-    top: .9rem;
-    padding-top: 1.5rem;
-    opacity: .85;
-    border: 2px solid;
+    top: 2rem;
 }
 
 .sidebarmobile {}
