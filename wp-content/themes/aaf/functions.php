@@ -372,4 +372,4 @@ function add_linked_images_class($html, $id, $caption, $title, $align, $url, $si
     }
     return $html;
 }
-add_filter('image_send_to_editor','give_linked_images_class',10,8);
+add_filter('image_send_to_editor','add_linked_images_class',10,8);
