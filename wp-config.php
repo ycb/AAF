@@ -19,15 +19,17 @@
 define('WP_SITEURL', 'http://localhost/aaf');
 define('WP_HOME', 'http://localhost/aaf');
 
+define('WP_DEBUG', true);
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'omega25_wrdp1');
 
 /** MySQL database username */
-define('DB_USER', 'omega25_ycb');
+define('DB_USER', 'omega25_new');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'GLZXB@44POp7');
+define('DB_PASSWORD', 'ROHY5HAuNz8p');
 
 /** MySQL hostname */
 define('DB_HOST', '198.57.149.6');

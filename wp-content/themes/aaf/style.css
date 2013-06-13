@@ -643,7 +643,7 @@ h1.sectiontitle {
             color: #333;
             padding-top: .5rem;
         }
-            .newsletter input[type="text"] {
+            .newsletter input[type="email"] {
                 background: #333;
                 color: #ccc;
                 border-radius: 0;

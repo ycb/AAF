@@ -45,7 +45,24 @@
 
 <body <?php body_class(); ?>>
     <div class="container navbar-static-top utilitynav visible-desktop">
-        <div class="span6 newsletter">Join the Movement&nbsp;&nbsp;<input type="text" id="appendedInputButton" class="span2" placeholder="ENTER YOUR EMAIL"><input type="submit" class="submit btn" name="submit" id="searchsubmit" value="GO"></div><div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate Now</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/?cat=13">Latest News</a></div>
+        <div class="span6 newsletter">
+            <form method="post" novalidate="" action="http://www.formstack.com/forms/index.php" class="fsForm fsFormFree fsSingleColumn fsMaxCol1" id="fsForm1497776">
+                <input type="hidden" name="form" value="1497776">
+                <input type="hidden" name="viewkey" value="APKw90qniK">
+                <input type="hidden" name="hidden_fields" id="hidden_fields1497776" value="">
+                <input type="hidden" name="fspublicsession" id="session_id1497776" value="">
+                <input type="hidden" name="incomplete" id="incomplete1497776" value="">
+                <input type="hidden" name="incomplete_email" id="incomplete_email1497776" value="">
+                <input type="hidden" name="referrer" id="referrer1497776" value="">
+                <input type="hidden" name="referrer_type" id="referrer_type1497776" value="link">
+                <input type="hidden" name="_submit" value="1">
+                <input type="hidden" name="style_version" value="3">
+                Join the Movement&nbsp;&nbsp;
+                <input type="email" id="appendedInputButton" name="field20239471" required="required" class="span2" placeholder="ENTER YOUR EMAIL" title="Email">
+                <input type="submit" class="submit btn fsSubmitButton" name="submit" id="searchsubmit" value="GO">
+            </form>
+        </div>
+        <div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate Now</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/?cat=13">Latest News</a></div>
     </div>
     <div id="page" class="hfeed site">
         <?php do_action( 'before' ); ?>

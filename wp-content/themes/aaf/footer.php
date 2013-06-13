@@ -58,23 +58,6 @@
 
 <?php wp_footer(); ?>
 
-<div id="fsLightbox1497776" class="fsLightbox" style="display:none;">
-<div align="right" style="padding-bottom:5px;"><a id="fsLightboxClose1497776" href="#" title="close"><img src="http://www.formstack.com/forms/images/2/cross.gif" border="0" /></a></div>
-<div id="fsLightboxContent1497776" style="height:450px; width:650px; padding-top:0px; overflow:auto;">
-<div style="text-align:right; font-size:x-small;"><a href="http://www.formstack.com?utm_source=h&utm_medium=jsembed&utm_campaign=fa&fa=h,1497776" title="Online Form Creator">Online Form Creator</a></div>
-</div>
-</div>
-
-<script type="text/javascript" src="http://www.formstack.com/forms/js/lightbox.js"></script>
-<script type="text/javascript">
-    var fsLightbox1497776 = new FSLightbox({form: 1497776, 
-        handleText: "Constant Contact Signup Form", handlePosition: "left", handleImage: "http://www.formstack.com/forms/lightboxHandle.php?str=Constant+Contact+Signup+Form",
-        handle: null
-    });
-</script>
-<!-- Use fsLightbox1497776.show() or set handle: "ID" to open lightbox without using predefined handle -->
-<!-- End Lightbox -->
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
