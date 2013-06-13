@@ -541,6 +541,11 @@ time {
 }
 
 
+.nav-previous {
+    text-align: left;
+}
+
+
 /* 404 page */
 
 body.error404 .entry-content .row {
@@ -592,7 +597,8 @@ h1.sectiontitle {
         margin-top: -18px;
     }
 
-    body.page-id-32 .logo, body.page-id-545 .logo {
+
+    body.page-id-32 .logo, body.page-id-545 .logo{
          background: url('images/logo_large_youth.png') 0 0 no-repeat;   
     }
 

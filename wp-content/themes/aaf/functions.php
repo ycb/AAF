@@ -110,6 +110,10 @@ class AAF {
             wp_enqueue_script( 'keyboard-image-navigation', $template_directory . '/js/keyboard-image-navigation.js', array('jquery'), '20120202', true );
         }
 
+        if ( is_front_page() || is_home() ) {
+            wp_enqueue_script( 'constant-contact', $template_directory . 'http://www.formstack.com/forms/js.php?1497776-APKw90qniK-v3', array(), '20130612', true );
+        }
+
         wp_enqueue_script( 'jquery-prettyphoto', $template_directory . '/js/jquery.prettyPhoto.js', array('jquery', 'theme-script'), '20120202', true );
         wp_enqueue_script( 'theme-script', $template_directory . '/js/scripts.js', array('jquery'), '20120206', true );
     }
