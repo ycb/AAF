@@ -534,6 +534,10 @@ ul.eo-event-meta li {
     list-style: none;
 }
 
+.eo-events-widget {
+    padding-right: 1em;
+}
+
 
 time {
     margin-top: 1rem;
