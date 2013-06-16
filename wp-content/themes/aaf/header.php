@@ -126,7 +126,8 @@
                     <ul class="socialbtns">
                         <li class="facebook"><a href="#"></a></li>
                         <li class="twitter"><a href="#"></a></li>
-                        <li class="instagram"><a href="#"></a></li>
+                        <li class="youtube"><a href="#"></a></li>
+                        <li class="flickr"><a href="#"></a></li>
                     </ul>
                 </div>
             </div>

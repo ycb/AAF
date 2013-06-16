@@ -106,8 +106,11 @@ get_header();
 
     <?php
 
-        } else {        
-            get_sidebar();
+        } else {  
+    ?>
+        <div class="hidden-desktop sidebarmobile"><?php get_sidebar('mobile'); ?></div>
+        <div class="visible-desktop sidebardesktop span4"><?php get_sidebar('desktop'); ?></div>
+    <?php      
         }
     ?>
 

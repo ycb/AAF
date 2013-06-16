@@ -155,7 +155,7 @@ input[type="color"] .uneditable-input {
 
 .socialbtns {
     margin: 0 auto 0 auto;
-    width: 11rem;
+    width: 15rem;
     text-align: center;
 
 }
@@ -166,17 +166,19 @@ input[type="color"] .uneditable-input {
 
 .socialbtns li a {
     display: block;
-    width: 45px;
-    height: 45px;
+    width:  52px;
+    height: 52px;
     border-radius: 80px;
 }
     .socialbtns li > a:active {
         box-shadow: 1px 1px 5px #ccc;
     }
 
-.socialbtns li.facebook { background: url(images/social_icons.png)  -6px -118px no-repeat; }
-.socialbtns li.twitter  { background: url(images/social_icons.png)  -6px -58px no-repeat; }
-.socialbtns li.instagram { background: url(images/social_icons.png) -6px -2px no-repeat; }
+.socialbtns li.facebook { background: url(images/social_icons.png)  0 0 no-repeat; }
+.socialbtns li.twitter  { background: url(images/social_icons.png)  -58px 0 no-repeat; }
+.socialbtns li.youtube  { background: url(images/social_icons.png)  -115px 0 no-repeat; }
+.socialbtns li.flickr  { background: url(images/social_icons.png)   -172px 0 no-repeat; }
+
 
 .logo {
     display: block;
@@ -461,7 +463,7 @@ html, body {
 }
 
     .site-footer .socialbtns li {
-        margin-right: 2rem;
+        margin-right: 1rem;
         margin-bottom: 20px;
     }
 
@@ -737,7 +739,7 @@ h1.sectiontitle {
     }
 }
 
-/* Portrait tablet to landscape and desktop */
+/* tablet landscape and older desktops */
 
 @media (min-width: 768px) and (max-width: 979px) { 
     
@@ -794,9 +796,19 @@ h1.sectiontitle {
         padding-right: 0;
     }
 
-     .site-footer {
+    .site-footer {
         height: 6.5rem;
     }
+
+    .social-search.pull-right {
+        float: left;
+        margin-left: 1.2rem;
+    }
+
+    .site-footer .socialbtns li {
+        margin-right: 0rem;
+    }
+
 }
 
 /* Landscape phone to portrait tablet */
@@ -820,14 +832,19 @@ h1.sectiontitle {
         margin-left: 0;
         width: 95%;
     }
+
+    .nav-collapse .dropdown-menu {
+        background-color: #fff;
+    }
     
     .home.page .entry-content {
         padding-left: 0;
     }
 
-    .nav-collapse .dropdown-menu {
-        background-color: #fff;
+    .hentry > aside > img {
+        width: 100%;
     }
+
     .fc-event-title {
         display: none;
     }
@@ -840,21 +857,23 @@ h1.sectiontitle {
         padding: 0 .5rem;
     }
 
+    .site-footer {
+        height: 6.5rem !important;
+    }
+
     .site-footer nav {
         margin-top: 0rem;
     }
 
-    .site-footer nav .footer-menu ul, .site-info, .credits, .footer-menu-container {
+    .site-footer nav .footer-menu ul,
+    .site-info,
+    .credits,
+    .footer-menu-container {
         margin: 0 auto;
-       text-align: center;
+        text-align: center;
     }
 
     .site-footer nav .footer-menu ul {
-        m
-    }
-
-    .site-footer {
-        height: 8.5rem;
     }
 
 }

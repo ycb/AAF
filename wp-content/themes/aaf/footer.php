@@ -22,13 +22,16 @@
                     <br>(415) 826-8674 (415) 826-8674
                 </div>
             
-            <span class="span4 social-search pull-right noleftmargin visible-desktop">
+            <span class="span4 social-search pull-right noleftmargin hidden-phone">
                     <ul class="socialbtns">
                         <li class="facebook"><a href="#"></a></li>
                         <li class="twitter"><a href="#"></a></li>
-                        <li class="instagram"><a href="#"></a></li>
+                        <li class="youtube"><a href="#"></a></li>
+                        <li class="flickr"><a href="#"></a></li>
                     </ul>
-                    <?php get_search_form(); ?>
+                    <div class="visible-desktop">
+                        <?php get_search_form(); ?>
+                    </div>
                 </span>
 
                 <nav class="span6 pull-right footer-menu-container">
