@@ -229,8 +229,14 @@ html, body {
     background: #ccc;
 }
 
-.site-header #navigation li a:hover {
+.dropdown-menu>li>a:hover, 
+.dropdown-menu>li>a:focus, 
+.dropdown-submenu:hover>a, 
+.dropdown-submenu:focus>a {
     background: #ccc;
+}
+.site-header #navigation li a:hover {
+    
     color: #000;
     line-height: 165%
 }
@@ -261,7 +267,6 @@ html, body {
     background: #BE2025;
     color: #fff;
     padding: 1rem 13px;
-    line-height: 20%;
 }
 
 .site-main-menu {
@@ -743,6 +748,10 @@ h1.sectiontitle {
 
     .site-header #navigation li a {
         font-size: .7rem;
+    }
+
+    .dropdown-submenu > a:after {
+        margin-top: -3px;
     }
 
     .site-title {
