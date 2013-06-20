@@ -531,6 +531,12 @@ img.map {
     display: none;
 }
 
+/* fixes for Connecions plugin */
+
+.cn-meta {
+    display: none;
+}
+
 /* fixes for Events plugin*/
 body.tax-event-category #primary {
     width: 64.4%;
