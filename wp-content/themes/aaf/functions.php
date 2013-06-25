@@ -94,6 +94,7 @@ class AAF {
         wp_enqueue_style( 'bootstrap', $template_directory . '/css/bootstrap.css' );
         wp_enqueue_style( 'bootstrap-responsive', $template_directory . '/css/bootstrap-responsive.css' );
         wp_enqueue_style( 'font-awesome', $template_directory . '/css/font-awesome.css' );
+        wp_enqueue_style( 'prettyPhoto', $template_directory . '/css/prettyPhoto.css' );
         wp_enqueue_style( 'style', $template_directory . '/css/style.css' );
         wp_enqueue_style( 'AAFstyle', $template_directory . '/style.css' );
 
@@ -113,6 +114,7 @@ class AAF {
             wp_enqueue_script( 'constant-contact', $template_directory . 'http://www.formstack.com/forms/js.php?1497776-APKw90qniK-v3', array(), '20130612', true );
         }
 
+        wp_enqueue_script( 'jquery-prettyphoto', $template_directory . '/js/jquery.prettyPhoto.js', array('jquery', 'theme-script'), '20120202', true );
         wp_enqueue_script( 'theme-script', $template_directory . '/js/scripts.js', array('jquery'), '20120206', true );
     }
 
@@ -358,3 +360,20 @@ add_filter( 'wp_nav_menu_items', 'nav_menu_first_last' );
 
 //sidebar shortcode
 add_filter('widget_text', 'do_shortcode');
+
+/**
+ * Attach a class to linked images' parent anchors
+ * e.g. a img => a.img img
+ */
+function add_linked_images_class($html, $id, $caption, $title, $align, $url, $size, $alt = '' ){
+    $classes = 'thickbox'; // separated by spaces, e.g. 'img image-link'
+
+    // check if there are already classes assigned to the anchor
+    if ( preg_match('/<a.*? class=".*?">/', $html) ) {
+        $html = preg_replace('/(<a.*? class=".*?)(".*?>)/', '$1 ' . $classes . '$2', $html);
+    } else {
+        $html = preg_replace('/(<a.*?)>/', '$1 class="' . $classes . '" >', $html);
+    }
+    return $html;
+}
+add_filter('image_send_to_editor','add_linked_images_class',10,8);
