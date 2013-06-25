@@ -3,11 +3,6 @@
         //comment submit button
         $('#respond').find('input[type=submit]').addClass('btn theme-btn');
 
-        $("a[rel^='prettyPhoto'], a.thickbox, .gallery-item a").prettyPhoto({
-            social_tools: false,
-            theme: 'facebook'
-        });
-
         $('.site-title').html('THE PRESCRIPTION TO<br /> END VIOLENCE AND CHANGE LIVES');
     });
 
