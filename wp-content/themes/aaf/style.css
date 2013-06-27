@@ -945,6 +945,14 @@ h1.sectiontitle {
         padding-top: 0;
         font-size: .9rem;
     }
+
+    .widget > div {
+        padding: 0;
+    }
+
+        .widget ul {
+            padding-right: 0;
+        }
 }
 
 a.caro-readmore {
@@ -954,10 +962,6 @@ a.caro-readmore {
     .site-content {
         padding-right: 1rem;
         padding-top: 1rem;
-    }
-
-    .widget > div {
-        padding-left: .5rem;
     }
 
     .EO_Event_List_Widget {
