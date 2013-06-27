@@ -120,7 +120,7 @@
             </div> <!-- .menu-container -->
         </header><!-- #masthead .site-header -->
 
-        <header class="hidden-desktop">
+        <header class="visible-phone">
             <div class="row-fluid">
                 <div class="span12 socialbtns-container">
                     <ul class="socialbtns">
