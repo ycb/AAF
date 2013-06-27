@@ -371,6 +371,10 @@ html, body {
         padding-right: .5rem;
     }
 
+    .widget ul {
+        padding-right: 1rem;
+    }
+
     aside#text-4 .textwidget  {
         border: 1px solid #333;
         padding: .5rem;
@@ -845,6 +849,14 @@ h1.sectiontitle {
     
     .home.page .entry-content {
         padding-left: 0;
+    }
+
+    .carousel-caption h4 {
+        font-size: 1.25rem;
+    }
+    
+    .carousel-caption {
+    font-size: 75%
     }
 
     .hentry > aside > img {
