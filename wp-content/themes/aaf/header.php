@@ -124,10 +124,10 @@
             <div class="row-fluid">
                 <div class="span12 socialbtns-container">
                     <ul class="socialbtns">
-                        <li class="facebook"><a href="#"></a></li>
-                        <li class="twitter"><a href="#"></a></li>
-                        <li class="youtube"><a href="#"></a></li>
-                        <li class="flickr"><a href="#"></a></li>
+                        <li class="facebook"><a href="https://www.facebook.com/StayAliveAndFree"></a></li>
+                        <li class="twitter"><a href="http://twitter.com/1800soldier"></a></li>
+                        <li class="youtube"><a href="http://www.youtube.com/user/streetsoldiersradio?feature="></a></li>
+                        <li class="flickr"><a href="http://www.flickr.com/photos/92986769@N02/"></a></li>
                     </ul>
                 </div>
             </div>

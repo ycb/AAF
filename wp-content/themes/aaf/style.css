@@ -227,6 +227,10 @@ html, body {
     padding-right: 20px;
 }
 
+.site-header #navigation li {
+  height: 36px;
+}
+
 .site-header #navigation li:hover {
     background: #ccc;
 }
@@ -252,6 +256,10 @@ html, body {
     border: none;
 }
 
+.site-header #navigation > ul > li > a .caret {
+    border-top: 4px solid #fff;
+}
+
 #navigation ul li ul {
     width: auto;
 }
@@ -268,7 +276,6 @@ html, body {
 #navigation .dropdown-menu > .active > a:focus {
     background: #BE2025;
     color: #fff;
-    padding: 1rem 13px;
 }
 
 .site-main-menu {

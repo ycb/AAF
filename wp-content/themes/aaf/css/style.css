@@ -208,50 +208,7 @@ p {
   transition: opacity .25s ease .1s;
   height: auto;
 }
-.site-header #navigation li:hover ul.sub-menu li a {
-  background: #fff;
-}
-.site-header #navigation li:hover ul.sub-menu li a:hover {
-  text-shadow: 0 1px 0 #fff;
-}
-.site-header #navigation li:hover ul.sub-menu li:last-child {
-  border-bottom: none;
-}
-.site-header #navigation li:hover ul.sub-menu li.current_page_item a {
-  text-shadow: 0 1px 0 #fff;
-}
-.site-header #navigation li:focus {
-  background: #fff;
-}
-.site-header #navigation .caret {
-  margin-top: 10px;
-  margin-left: 5px;
-  border-top-color: #fff;
-}
-.site-header #navigation > ul > li ul.sub-menu li:hover {
-  background: #fff;
-}
-.site-header #navigation > ul > li > a:hover {
-  text-shadow: none;
-}
-.site-header #navigation > ul > li {
-  border-left: 1px solid #dedede;
-  border-right: 1px solid #bababa;
-}
-.site-header #navigation > ul > li.current-menu-item > a {
-  background: #999999;
-  text-shadow: none;
-  font-weight: bold;
-}
-.site-header #navigation > ul > li.current-menu-item > a:hover {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  background: #fff;
-}
-.site-header #navigation > ul > li.current-menu-item:hover > a {
-  background: #fff;
-}
+
 /*  --------------------------------------------------
 :: Navigation
 -------------------------------------------------- */
