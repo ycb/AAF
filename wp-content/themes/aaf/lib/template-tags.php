@@ -73,7 +73,7 @@ if ( ! function_exists( 'AAF_posted_on' ) ) :
  * @package AAF - 2013 1.0
  */
 function AAF_posted_on() {
-    printf( __( '<a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"></span>', 'AAF' ),
+    printf( __( '<time class="entry-date" datetime="%3$s" pubdate>%4$s</time><span class="byline"></span>', 'AAF' ),
         esc_url( get_permalink() ),
         esc_attr( get_the_time() ),
         esc_attr( get_the_date( 'c' ) ),
