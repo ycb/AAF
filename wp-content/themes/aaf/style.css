@@ -750,6 +750,10 @@ h1.sectiontitle {
         position: relative;
         margin-left: 18.75rem;
     }
+
+    .carousel-caption h4 {
+font-size: 1.75rem;
+    }
 }
 
 @media (min-width: 979px) and (max-width: 1199px) {
@@ -883,10 +887,6 @@ h1.sectiontitle {
         float: none;
     }
 
-    .site-content a.caro-readmore {
-        display: none;
-    }
-
     .hentry > aside > img {
         width: 100%;
     }
@@ -904,7 +904,7 @@ h1.sectiontitle {
     }
 
     .site-footer {
-        height: 6.5rem !important;
+        height: 7.5rem;
     }
 
     .site-footer nav {
@@ -939,6 +939,10 @@ h1.sectiontitle {
         padding-right: 0;
         line-height: 1.5rem;
     }
+
+    .site-content a.caro-readmore {
+        display: none;
+    }
 }
 
 /*iphones or double density pixel phones it's actually double the resolution but css uses the single unit*/
@@ -958,14 +962,9 @@ h1.sectiontitle {
         padding: 0;
     }
 
-        .widget ul {
-            padding-right: 0;
-        }
-}
-
-a.caro-readmore {
-    display: none;
-} /* PS - temporary measure */
+    .widget ul {
+        padding-right: 0;
+    }
 
     .site-content {
         padding-right: 1rem;
@@ -983,10 +982,6 @@ a.caro-readmore {
     .site-footer nav .footer-menu ul, .site-info, .credits, .footer-menu-container {
         margin: 0 auto;
         text-align: center;
-    }
-
-    .site-footer {
-        height: 9rem;
     }
 
 }
