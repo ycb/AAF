@@ -267,6 +267,7 @@ html, body {
 #navigation .dropdown-menu > li > a, 
 #navigation .dropdown-menu > li > a:hover, 
 #navigation .dropdown-menu > li > a:focus {
+    padding: 1rem 13px;
     line-height: 20%;
 }
 
@@ -849,6 +850,10 @@ h1.sectiontitle {
         width: 95%;
     }
 
+    .site-header #navigation li:hover {
+        height: 28px;
+    }
+
     .nav-collapse .dropdown-menu {
         background-color: #fff;
     }
@@ -917,6 +922,25 @@ h1.sectiontitle {
         padding-right: 0;
         line-height: 1.5rem;
     }
+}
+
+/*iphones or double density pixel phones it's actually double the resolution but css uses the single unit*/
+@media only screen and (min-device-width : 320px) { 
+    .site-title {
+        font-size: .6rem;
+        padding-top: 1.5rem;
+        text-align: right;
+    }
+    .carousel-caption h4 {
+        margin-bottom: -.5rem;
+        padding-top: 0;
+        font-size: .9rem;
+    }
+
+    .carousel-caption h4 a {
+        color: #BE2025;
+    }
+}
 
 a.caro-readmore {
     display: none;

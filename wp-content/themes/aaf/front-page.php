@@ -53,7 +53,7 @@ get_header();
 					echo wp_get_attachment_image($custom_image, 'full');  
 				?>
 				<div class="carousel-caption">
-                  <h4><?php echo get_the_title( $query->post->ID ) ?></h4>
+                  <h4><?php echo '<a href="'. $post_meta_data['slide_url'][0] .'">' . get_the_title( $query->post->ID ) . '</a>' ?></h4>
                   <p><?php 
                   	if( $post_meta_data['slide_url'][0] ) {
                   		$readmorelink = '<a href="'. $post_meta_data['slide_url'][0] .'" class="caro-readmore btn">Read More</a>';
