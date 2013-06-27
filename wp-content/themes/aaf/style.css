@@ -315,6 +315,10 @@ html, body {
     padding-bottom: .5rem;
 }
 
+.carousel-caption h4 a {
+    text-decoration: underline;
+}
+
 .site-content a.caro-readmore {
     background: #bcbdbf;
     position: absolute;
@@ -879,6 +883,10 @@ h1.sectiontitle {
         float: none;
     }
 
+    .site-content a.caro-readmore {
+        display: none;
+    }
+
     .hentry > aside > img {
         width: 100%;
     }
@@ -978,7 +986,7 @@ a.caro-readmore {
     }
 
     .site-footer {
-        height: 8.5rem;
+        height: 9rem;
     }
 
 }
