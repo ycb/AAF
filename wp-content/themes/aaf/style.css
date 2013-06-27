@@ -602,6 +602,10 @@ h1.sectiontitle {
     padding-left: 19.81rem;
 }
 
+.carousel-caption h4 a {
+    color: #BE2025;
+}
+
 /*Media queries*/
 /*Larger modern laptops and desktops*/
 @media (min-width: 1200px) {
@@ -861,13 +865,18 @@ h1.sectiontitle {
     .home.page .entry-content {
         padding-left: 0;
     }
+    
+    .carousel-caption {
+        font-size: 75%
+    }
 
     .carousel-caption h4 {
         font-size: 1.25rem;
     }
-    
-    .carousel-caption {
-    font-size: 75%
+
+    .site-content .btn {
+        display: block;
+        float: none;
     }
 
     .hentry > aside > img {
@@ -925,7 +934,7 @@ h1.sectiontitle {
 }
 
 /*iphones or double density pixel phones it's actually double the resolution but css uses the single unit*/
-@media only screen and (min-device-width : 320px) { 
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
     .site-title {
         font-size: .6rem;
         padding-top: 1.5rem;
@@ -935,10 +944,6 @@ h1.sectiontitle {
         margin-bottom: -.5rem;
         padding-top: 0;
         font-size: .9rem;
-    }
-
-    .carousel-caption h4 a {
-        color: #BE2025;
     }
 }
 
