@@ -17,17 +17,17 @@
             <div class="span12">    
                 <div class="span8 map visible-desktop">
                     <a href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Omega+Boys+Club,+1060+Tennessee+Street,+San+Francisco,+CA&aq=0&oq=ome&sll=37.269174,-119.306607&sspn=12.3355,20.061035&ie=UTF8&hq=Omega+Boys+Club,+1060+Tennessee+Street,+San+Francisco,+CA&hnear=&radius=15000&ll=37.758517,-122.389434&spn=0.095815,0.130291&t=m&z=13&iwloc=A&cid=6160364427089974319"><img class="pull-left map" src="<?php bloginfo('stylesheet_directory'); ?>/images/map.png"></a>
-                    <h3>Alive &amp; Free is located in San Francisco</h3> in the Dog Patch neighborhood<br /> near 22nd St, near one block above 3rd St. 
-                    <br>1060 Tennessee st, San Francisco, CA 
-                    <br>(415) 826-8674 (415) 826-8674
+                    <h3>Alive &amp; Free is located in San Francisco</h3> in the Dog Patch neighborhood<br /> @ 22nd St, one block above 3rd St. 
+                    <br>1060 Tennessee St, San Francisco, CA 94107
+                    <br>p: (415) 826-8664 f: (415) 826-8673
                 </div>
             
             <span class="span4 social-search pull-right noleftmargin hidden-phone">
                     <ul class="socialbtns">
-                        <li class="facebook"><a href="#"></a></li>
-                        <li class="twitter"><a href="#"></a></li>
-                        <li class="youtube"><a href="#"></a></li>
-                        <li class="flickr"><a href="#"></a></li>
+                        <li class="facebook"><a target="_blank" href="http://www.facebook.com/StayAliveAndFree"></a></li>
+                        <li class="twitter"><a target="_blank" href="http://twitter.com/1800soldier"></a></li>
+                        <li class="youtube"><a target="_blank" href="http://www.youtube.com/user/streetsoldiersradio"></a></li>
+                        <li class="flickr"><a target="_blank" href="http://www.flickr.com/photos/92986769@N02/"></a></li>
                     </ul>
                     <div class="visible-desktop">
                         <?php get_search_form(); ?>
