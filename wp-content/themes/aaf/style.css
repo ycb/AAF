@@ -829,7 +829,7 @@ h1.sectiontitle {
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
+@media (max-width: 780px) { 
 
     .site-title {
         font-size: 1.4rem;
