@@ -267,7 +267,6 @@ html, body {
 #navigation .dropdown-menu > li > a, 
 #navigation .dropdown-menu > li > a:hover, 
 #navigation .dropdown-menu > li > a:focus {
-    padding: 1rem 13px;
     line-height: 20%;
 }
 
