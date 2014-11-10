@@ -8,7 +8,7 @@
             theme: 'facebook'
         });
 
-        $('.site-title').html('THE PRESCRIPTION TO<br /> END VIOLENCE AND CHANGE LIVES');
+        //$('.site-title').html('THE PRESCRIPTION TO<br /> END VIOLENCE AND CHANGE LIVES');
     });
 
     $(window).resize(function(){

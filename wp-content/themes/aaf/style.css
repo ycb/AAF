@@ -155,8 +155,22 @@ input[type="color"] .uneditable-input {
 
 .socialbtns {
     margin: 0 auto 0 auto;
-    width: 15rem;
     text-align: center;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
 
 }
 .socialbtns li {
@@ -600,7 +614,7 @@ body.error404 .entry-content .row {
 h1.sectiontitle {
     font-family: 'UniversLight', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-
+    text-align: center;
 }
 .home.page .entry-content {
     padding-left: 19.81rem;
@@ -904,7 +918,17 @@ font-size: 1.75rem;
     }
 
     .site-footer {
-        height: 7.5rem;
+        height: auto;    
+    }
+
+    .site-footer .ad {
+        margin-bottom: 1em;
+        text-align: center;
+        width: 100%;   
+    }
+
+    .ad img {
+        width: 100%;
     }
 
     .site-footer nav {

@@ -16,6 +16,8 @@ get_header();
 <div id="primary" class="content-area span8">
     <div id="content" class="site-content" role="main">
 
+    	<h1 class="sectiontitle">Lead Headline</h1>
+
     	<div id="myCarousel" class="carousel slide">
 		  <ol class="carousel-indicators">
 			<?php
@@ -78,7 +80,9 @@ get_header();
 		</div>
 
 		
-		<h1 class="sectiontitle">Latest Update</h1>
+		<h1 class="sectiontitle">Lead Video</h1>
+
+		<img src="http://fakeimg.pl/450x200/00CED1/FFF/?text=video">
 	
 
 		<?php 	//latest updates arguments
@@ -97,7 +101,7 @@ get_header();
 			endwhile;
 			?>
 
-		<h1 class="sectiontitle">Next from the Calendar</h1>
+		<h1 class="sectiontitle">Health Beat</h1>
 
 	
 	<?php
@@ -119,7 +123,7 @@ get_header();
 			endwhile;
 			?>
 
-			<h1 class="sectiontitle">Featured News</h1>
+			<!-- <h1 class="sectiontitle">Featured News</h1>
 
 	<?php
 		
@@ -137,7 +141,7 @@ get_header();
 				$queryfeatured->the_post();
 				get_template_part( 'content', 'front-page' );
 			endwhile;
-		?>
+		?> -->
 
     </div><!-- #content .site-content -->
 </div><!-- #primary .content-area -->
