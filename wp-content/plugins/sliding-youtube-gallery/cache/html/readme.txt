@@ -1,1 +1,0 @@
-This folder is used to cache gallery html code
