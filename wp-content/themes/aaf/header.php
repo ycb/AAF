@@ -41,6 +41,18 @@
 
 <?php wp_head(); ?>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-21899380-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -57,12 +69,12 @@
                 <input type="hidden" name="referrer_type" id="referrer_type1497776" value="link">
                 <input type="hidden" name="_submit" value="1">
                 <input type="hidden" name="style_version" value="3">
-                Join the Movement&nbsp;&nbsp;
+                Stay in Touch &nbsp;&nbsp;
                 <input type="email" id="appendedInputButton" name="field20239471" required="required" class="span2" placeholder="ENTER YOUR EMAIL" title="Email">
                 <input type="submit" class="submit btn fsSubmitButton" name="submit" id="searchsubmit" value="GO">
             </form>
         </div>
-        <div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate Now</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/?cat=13">Latest News</a></div>
+        <div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/?cat=12">Latest News</a></div>
     </div>
     <div id="page" class="hfeed site">
         <?php do_action( 'before' ); ?>
@@ -124,10 +136,10 @@
             <div class="row-fluid">
                 <div class="span12 socialbtns-container">
                     <ul class="socialbtns">
-                        <li class="facebook"><a href="https://www.facebook.com/StayAliveAndFree"></a></li>
-                        <li class="twitter"><a href="http://twitter.com/1800soldier"></a></li>
-                        <li class="youtube"><a href="http://www.youtube.com/user/streetsoldiersradio?feature="></a></li>
-                        <li class="flickr"><a href="http://www.flickr.com/photos/92986769@N02/"></a></li>
+                        <li class="facebook"><a target="_blank" href="http://www.facebook.com/pages/Richmond-Pulse/191090144262742"></a></li>
+                        <li class="twitter"><a target="_blank" href="http://twitter.com/#!/richmondpulse"></a></li>
+                        <li class="youtube"><a target="_blank" href="http://www.instagram.com/richmondpulse.com"></a></li>
+                        <li class="flickr"><a target="_blank" href="http://vimeo.com/channels/183122/"></a></li>
                     </ul>
                 </div>
             </div>

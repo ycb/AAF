@@ -1,9 +1,9 @@
 /*
-Theme Name: AAF 2013 Theme
+Theme Name: RP 2014 Theme
 Theme URI: http://YourCustomBlog.com/
 Author: Dario Novoa
 Author URI: http://darionovoa.info
-Description: Omega Boys Club Theme by YCB
+Description: Omega Boys Club Theme  adapted for Richmond Pulse
 Version: 1.0
 */
 
@@ -196,8 +196,8 @@ input[type="color"] .uneditable-input {
 
 .logo {
     display: block;
-    width: 110px;
-    height: 92px;
+    width: 340px;
+    height: 72px;
     background: url('images/logo_mobile.png') 0 0 no-repeat;
     margin: 0 0 1.5rem 1.5rem;
 }
@@ -237,7 +237,7 @@ html, body {
     font-weight: lighter;
     letter-spacing: .07rem;
     text-transform: uppercase;
-    padding-top: 4.4rem;
+    padding-top: 0.5rem;
     padding-right: 20px;
 }
 
@@ -630,7 +630,7 @@ h1.sectiontitle {
     .site-title {
         font-size: 3.2rem;
         line-height: 3.5rem;
-        padding-top: 3.6rem;
+        padding-top: 2.6rem;
     }
 }
 
@@ -641,10 +641,10 @@ h1.sectiontitle {
     }
 
     .logo {
-        width: 220px;
-        height: 180px;
+        width: 490px;
+        height: 115px;
         background: url('images/logo_large.png') 0 0 no-repeat;
-        margin-top: -18px;
+        margin-top: 25px;
     }
 
 
@@ -734,7 +734,7 @@ h1.sectiontitle {
     }
 
     .site-title {
-        font-size: 2.75rem;
+        font-size: 2.25rem;
         line-height: 3rem;
         text-align: right;
         color: #404041;
@@ -954,10 +954,10 @@ font-size: 1.75rem;
     .navbar .brand {
         padding-right: 0px;
         padding-left: 0px;
-        margin: 0 0 0 -19px;
+        margin: 0 0 0 8px;
     }
     .site-title {
-        font-size: .92rem;
+        font-size: .87rem;
         padding-top: 1.2rem;
         text-align: left;
         padding-right: 0;
