@@ -7,14 +7,16 @@ Description: Omega Boys Club Theme by YCB
 Version: 1.0
 */
 
+
+
 /*Lets get the fonts in*/
 @font-face {
   font-family: 'VAGRoundedLight';
-  src: url('font/vag-rounded-light.eot'); /* IE9 Compat Modes */
-  src: url('font/vag-rounded-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('font/vag-rounded-light.woff') format('woff'), /* Modern Browsers */
-       url('font/vag-rounded-light.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('font/vag-rounded-light.svg#miksrdyxbp') format('svg'); /* Legacy iOS */
+  src: url('font/bpreplay-webfont.eot'); /* IE9 Compat Modes */
+  src: url('font/bpreplay-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/bpreplay-webfont.woff') format('woff'), /* Modern Browsers */
+       url('font/bpreplay-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('font/bpreplay-webfont.svg#miksrdyxbp') format('svg'); /* Legacy iOS */
        
   font-style:   normal;
   font-weight:  200;
